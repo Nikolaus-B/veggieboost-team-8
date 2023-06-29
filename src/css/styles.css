@@ -4,22 +4,31 @@
   | default @import url()
   |============================
 */
+@import url('./fonts.css');
+/* @import url('./variables.css'); */
 @import url('./reset.css');
-@import url('./vite-promo.css');
+/* @import url('./base.css'); */
+
+/* header */
 @import url('./header.css');
 
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+/* hero */
+@import url('./hero.css');
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+/* How it works first */
+@import url('./how-it-works-first.css');
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
+/* How it works second */
+@import url('./how-it-works-second.css');
+
+/* Vegetables */
+@import url('./vegetables.css');
+
+/* We will call you */
+@import url('./we-will-call-you.css');
+
+/* footer */
+@import url('./footer.css');
+
+/* modal */
+@import url('./modal.css');
