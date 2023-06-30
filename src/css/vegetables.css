@@ -14,7 +14,6 @@
   font-weight: 500;
   font-size: 24px;
   line-height: 1.16;
-  letter-spacing: -0.96px;
   text-transform: uppercase;
   text-align: center;
   text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
@@ -45,7 +44,6 @@
   font-size: 24px;
   font-weight: 700;
   line-height: 1.16;
-  letter-spacing: -0.96px;
 }
 
 .card-discription {
@@ -59,30 +57,43 @@
   font-size: 14px;
   font-weight: 500;
   line-height: 1.28;
-  letter-spacing: -0.56px;
   margin-top: 22px;
 }
 
 .order-button {
-  display: block;
+  display: flex;
+  gap: 4px;
+  align-items: end;
   width: 80px;
   height: 80px;
   border: none;
   border-radius: 80px;
-  color: var(--main-wtite-color);
-  text-align: center;
-  text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
-  font-size: 14px;
-  font-family: DM Sans;
-  font-weight: 500;
-  line-height: 1.28;
-  letter-spacing: -0.56px;
-  text-transform: uppercase;
   background-color: var(--button-color);
   margin-right: auto;
   margin-left: auto;
   margin-top: 20px;
   padding: 26px 8px 26px 7px;
+  transition: background-color var(--transition-dur-and-func);
+}
+
+.order-button:hover {
+  background-color: var(--button-accent-color);
+}
+
+.button-icon {
+  fill: var(--main-wtite-color);
+}
+
+.button-span {
+  transform: rotate(-14deg);
+  color: var(--main-wtite-color);
+  text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  font-family: DM Sans;
+  font-weight: 500;
+  line-height: 1.28;
+  text-transform: uppercase;
+  margin: 0;
 }
 
 @media screen and (max-width: 1279px) {
@@ -105,12 +116,10 @@
   .section-title {
     font-size: 28px;
     line-height: 1.14;
-    letter-spacing: -1.12px;
   }
   .section-description {
     font-size: 18px;
     line-height: 1.33;
-    letter-spacing: -0.72px;
     max-width: 562px;
     margin-left: auto;
     margin-right: auto;
@@ -130,7 +139,6 @@
   .card-name {
     font-size: 28px;
     line-height: 1.14;
-    letter-spacing: -1.12px;
   }
 
   .card-discription {
@@ -141,7 +149,22 @@
   .price {
     font-size: 18px;
     line-height: 1.33;
-    letter-spacing: -0.72px;
+  }
+
+  .order-button {
+    width: 114px;
+    height: 114px;
+    margin-top: 40px;
+    padding: 38px 17px 39px 18px;
+  }
+
+  .button-icon {
+    fill: var(--main-wtite-color);
+  }
+
+  .button-span {
+    font-size: 18px;
+    line-height: 1.33;
   }
 }
 
@@ -157,7 +180,6 @@
   .section-title {
     font-size: 40px;
     line-height: 1.1;
-    letter-spacing: -1.6px;
   }
 
   .vegetables-list {
