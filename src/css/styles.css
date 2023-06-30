@@ -5,9 +5,9 @@
   |============================
 */
 @import url('./fonts.css');
-/* @import url('./variables.css'); */
+@import url('./variables.css');
 @import url('./reset.css');
-/* @import url('./base.css'); */
+@import url('./base.css');
 
 /* header */
 @import url('./header.css');
