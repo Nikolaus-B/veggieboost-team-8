@@ -30,7 +30,7 @@
 .how-it-works2-list {
   display: flex;
   flex-direction: column;
-  gap: 21px;
+  gap: 20px;
 }
 
 
@@ -64,11 +64,16 @@
   background-color: #A1C487;
   border-radius: 50%;
   font-size: 18px;
+  font-weight: 400;
   display: flex;
   align-items: center;
   justify-content: center;
     
    
+}
+
+.how-it-works2-img {
+  margin-bottom: 20px;
 }
 
 
@@ -83,11 +88,31 @@
 
     @media screen and (min-width: 768px) {
 
+     
+       .how-it-works2-title {
+        font-size: 28px;
+        line-height: 1.14;
+        letter-spacing: -1.12px;
+        max-width: 274px;
+       
+       }
+
+
+        
+
 
     
     }
   
     @media screen and (min-width: 1280px) {
+
+      .how-it-works2-title {
+        font-size: 40px;
+        
+          line-height: 1.1;
+          letter-spacing: -1.6px;
+          
+      }
      
 
 
