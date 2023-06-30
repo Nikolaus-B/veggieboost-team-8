@@ -1,4 +1,138 @@
-.header-text {
-  font-family: DM Sans;
+/**************** MOBILE ****************/
+
+@media screen and (max-width: 374px) {
+  .header-container {
+    max-width: calc(100% - 40px);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header-nav-list {
+    display: none;
+  }
+  .header-basket-btn {
+    display: none;
+  }
+}
+
+body {
+  padding-top: 50px;
+}
+
+.header-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  line-height: 0;
+}
+
+.header-container {
+  background-color: var(--main-wtite-color);
+  width: 375px;
+  height: 50px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav {
+  display: none;
+}
+
+.header-logo-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-logo-svg {
+  fill: var(--header-green-color);
+  margin-right: 8px;
+}
+
+.header-logo-text {
+  font-family: DM Sans, sans-serif;
   font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29%;
+  letter-spacing: -0.56px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.mobile-menu-btn {
+  width: 24px;
+  height: 24px;
+}
+
+.mobile-menu-btn-svg {
+  fill: var(--header-green-color);
+}
+
+/**************** TABLET ****************/
+
+@media screen and (min-width: 768px) {
+  .header-container {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+    justify-content: start;
+  }
+
+  .mobile-menu-btn {
+    display: none;
+  }
+
+  .header-nav {
+    display: block;
+    margin-right: 86px;
+  }
+
+  .header-nav-list {
+    display: flex;
+    gap: 20px;
+  }
+
+  .header-nav-item {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.56px;
+    transition: color var(--transition-dur-and-func);
+  }
+
+  .header-nav-item:hover,
+  .header-nav-item:focus {
+    color: var(--button-accent-color);
+  }
+
+  .header-basket-btn {
+    width: 20px;
+    height: 20px;
+    margin-left: auto;
+  }
+
+  .header-basket-svg {
+    fill: var(--main-text-color);
+    transition: fill var(--transition-dur-and-func);
+  }
+
+  .header-basket-svg:hover,
+  .header-basket-svg:focus {
+    fill: var(--button-accent-color);
+  }
+}
+
+/**************** DESKTOP ****************/
+
+@media screen and (min-width: 1280px) {
+  .header-container {
+    width: 1280px;
+  }
+  .header-nav {
+    margin-right: 308px;
+  }
 }
