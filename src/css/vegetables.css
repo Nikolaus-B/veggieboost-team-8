@@ -70,13 +70,18 @@
   text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
   font-size: 14px;
   font-family: DM Sans;
-  font-style: normal;
   font-weight: 500;
-  line-height: 18px;
+  line-height: 1.28;
   letter-spacing: -0.56px;
   text-transform: uppercase;
   background-color: var(--button-color);
   margin-right: auto;
   margin-left: auto;
   padding: 26px 8px 26px 7px;
+}
+
+@media screen and (max-width: 1279px) {
+  .radish-card {
+    display: none;
+  }
 }
