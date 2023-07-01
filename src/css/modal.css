@@ -1,3 +1,202 @@
-.modal {
-  margin: 0;
+@media screen and (min-width: 768px) {
+
+  .backdrop {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 0px 8.775463104248047px 0px rgba(0, 0, 0, 0.01), 0px 0px 18.17037010192871px 0px rgba(0, 0, 0, 0.02), 0px 0px 36.23749923706055px 0px rgba(0, 0, 0, 0.03), 0px 0px 71.02963256835938px 0px rgba(0, 0, 0, 0.03), 0px 0px 130.5995330810547px 0px rgba(0, 0, 0, 0.04), 0px 0px 223px 0px rgba(0, 0, 0, 0.05);
+    overflow: auto;
+  }
+
+  .modal-container {
+    position: absolute;
+    max-width: 704px;
+    height: 853px;
+    padding: 40px 40px 0 40px;
+  }
+
+  .text-modal-order {
+    color: #141414;
+    text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.10);
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 44px;
+    letter-spacing: -1.6px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+
+  .modal-card-wrapper {
+    width: 200px;
+    height: 250px;
+    background: #FAF3E7;
+    border-radius: 20px;
+    cursor: pointer;
+    padding-top: 14px;
+
+  }
+
+  .order-item-title {
+    color: #141414;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.72px;
+    margin-bottom: 2px;
+    padding-left: 24px;
+  }
+
+  .order-item-descr {
+    color: #141414;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.28px;
+    padding-left: 24px;
+  }
+
+  .list-order {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 40px;
+  }
+
+  .modal-input {
+    border-radius: 100px;
+    border: 1px solid rgba(20, 20, 20, 0.30);
+    width: 360px;
+    height: 48px;
+    padding-left: 24px;
+    outline: transparent;
+  }
+
+  .textarea-input {
+    width: 360px;
+    height: 145px;
+    border-radius: 20px;
+    border: 1px solid rgba(20, 20, 20, 0.30);
+    padding-left: 24px;
+    padding-top: 15px;
+    color: rgba(20, 20, 20, 0.50);
+    font-size: 14px;
+    font-family: DM Sans;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.56px;
+    resize: none;
+    outline: transparent;
+  }
+
+  .input-wrapper {
+    margin-bottom: 14px;
+  }
+
+  .btn-submit {
+    border-radius: 100px;
+    background: #FC8A11;
+    padding: 15px 35px;
+    border: none;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.56px;
+  }
+
+  .form-container {
+    margin-bottom: 20px;
+  }
+
+  .checkbox-label {
+    cursor: pointer;
+  }
+
+  .span-check {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #A1C487;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+    margin-left: auto;
+    margin-bottom: 6px;
+    margin-right: 14px;
+  }
+
+  .modal-input-checkbox:checked+.checkbox-label span {
+    fill: #A1C487;
+  }
+
+  .modal-card-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  .icon-modal-btn {
+    width: 28px;
+    height: 28px;
+    stroke: #141414;
+    fill: #141414;
+  }
+
+  .btn-menu-close {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    cursor: pointer;
+    margin-left: auto;
+    border: none;
+    padding: 0;
+    top: 20px;
+    right: 20px;
+  }
+
+  .modal-pic {
+    position: absolute;
+    top: 490px;
+    left: 414px;
+  }
+
+}
+
+@media screen and (min-width: 1280px) {
+
+  .modal-container {
+    position: absolute;
+    max-width: 891px;
+    height: 911px;
+    padding: 40px 40px 0 40px;
+  }
+
+  .modal-card-wrapper {
+    width: 257px;
+    height: 308px;
+  }
+
+  .modal-card-pic {
+    width: 243px;
+    height: 200px;
+  }
+
+  .modal-pic {
+    position: absolute;
+    top: 541px;
+    left: 440px;
+  }
+
+  .order-item-title {
+    margin-bottom: 8px;
+    font-size: 24px;
+  }
 }
