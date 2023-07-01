@@ -116,13 +116,14 @@ body {
   }
 
   .header-basket-svg {
-    fill: var(--main-text-color);
-    transition: fill var(--transition-dur-and-func);
+    stroke: var(--main-text-color);
+    fill: transparent;
+    transition: stroke var(--transition-dur-and-func);
   }
 
   .header-basket-svg:hover,
   .header-basket-svg:focus {
-    fill: var(--button-accent-color);
+    stroke: var(--button-accent-color);
   }
 }
 
