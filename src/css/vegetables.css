@@ -14,6 +14,7 @@
   font-weight: 500;
   font-size: 24px;
   line-height: 1.16;
+  letter-spacing: -0.96px;
   text-transform: uppercase;
   text-align: center;
   text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
@@ -24,6 +25,7 @@
   text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
   font-size: 14px;
   line-height: 1.28;
+  letter-spacing: -0.96px;
 }
 
 .vegetables-list {
@@ -37,8 +39,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-width: 335px;
   height: 443px;
+  max-width: 335px;
   padding: 40px 18px 20px 18px;
   background-color: var(--light-green-color);
   border-radius: 20px;
@@ -48,19 +50,21 @@
   font-size: 24px;
   font-weight: 700;
   line-height: 1.16;
+  letter-spacing: -0.96px;
 }
 
 .card-discription {
   font-size: 14px;
   line-height: 1.28;
   margin-top: 8px;
-  margin-bottom: 40px;
+  letter-spacing: -0.28px;
 }
 
 .price {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.28;
+  letter-spacing: -0.72px;
 }
 
 .order-button {
@@ -92,6 +96,7 @@
   color: var(--main-wtite-color);
   text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
   font-size: 14px;
+  letter-spacing: -0.56px;
   font-family: DM Sans;
   font-weight: 500;
   line-height: 1.28;
@@ -119,10 +124,13 @@
   .section-title {
     font-size: 28px;
     line-height: 1.14;
+    letter-spacing: -1.12px;
   }
+
   .section-description {
     font-size: 18px;
     line-height: 1.33;
+    letter-spacing: -0.72px;
     max-width: 562px;
     margin-left: auto;
     margin-right: auto;
@@ -143,16 +151,19 @@
   .card-name {
     font-size: 28px;
     line-height: 1.14;
+    letter-spacing: -1.12px;
   }
 
   .card-discription {
     font-size: 18px;
     line-height: 1.33;
+    letter-spacing: -0.36px;
   }
 
   .price {
     font-size: 18px;
     line-height: 1.33;
+    letter-spacing: -0.72px;
   }
 
   .order-button {
@@ -162,13 +173,10 @@
     padding: 38px 17px 39px 18px;
   }
 
-  .button-icon {
-    fill: var(--main-wtite-color);
-  }
-
   .button-span {
     font-size: 18px;
     line-height: 1.33;
+    letter-spacing: -0.72px;
   }
 }
 
@@ -184,6 +192,7 @@
   .section-title {
     font-size: 40px;
     line-height: 1.1;
+    letter-spacing: -1.6px;
   }
 
   .vegetables-list {
@@ -194,5 +203,11 @@
     max-width: calc((100%-48px) / 3);
     margin: 0;
     padding: 64px 34px 24px 24px;
+  }
+
+  .card-name {
+    font-size: 32px;
+    line-height: 1.18;
+    letter-spacing: -1.28px;
   }
 }
