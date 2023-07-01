@@ -34,6 +34,9 @@
   margin-top: 40px;
 }
 .vegetables-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   max-width: 335px;
   height: 443px;
   padding: 40px 18px 20px 18px;
@@ -58,7 +61,6 @@
   font-size: 14px;
   font-weight: 500;
   line-height: 1.28;
-  margin-top: 22px;
 }
 
 .order-button {
