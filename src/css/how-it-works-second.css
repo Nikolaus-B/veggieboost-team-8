@@ -14,13 +14,11 @@
 }
 
 @media (min-device-pixel-ratio: 2),
-(-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-  .hero {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)),
-      url(../img/mob-bg-child-2x.png);
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .how-it-works2 {
+    background-image: url(../img/mob-bg-child-2x.png);
   }
 }
 
@@ -34,7 +32,7 @@
   margin-bottom: 40px;
 }
 
-.how-it-works2-content {
+.section-lists {
   display: flex;
   gap: 14px;
 }
@@ -78,40 +76,29 @@
   justify-content: center;
 }
 
-.how-it-works2-img {
+.child-img {
   margin-bottom: 20px;
   margin-right: auto;
   margin-left: auto;
 }
 
-@media screen and (min-width: 768px) {
+/*-----Tablet-------*/
 
+@media screen and (min-width: 768px) {
   .how-it-works2 {
-      max-width: 375px;
-      width: 100%;
-      margin-left: auto;
-      margin-right: auto;
-  
-      padding-top: 40px;
-      background-color: var(--secondary-background-color);
-      border-radius: 40px;
-      background-image: url(../img/mob-bg-child.png);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-    }
-  
-    @media (min-device-pixel-ratio: 2),
+    max-width: 768px;
+    padding-top: 40px;
+    background-image: url(../img/tab-bg-child.png);
+  }
+
+  @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-      .hero {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-            rgba(46, 47, 66, 0.7)),
-          url(../img/mob-bg-child-2x.png);
-      }
+    .how-it-works2 {
+      background-image: url(../img/tab-bg-child-2x.png);
     }
-
+  }
 
   .how-it-works2-title {
     font-size: 28px;
@@ -119,13 +106,41 @@
     letter-spacing: -1.12px;
     max-width: 274px;
   }
+
+  .how-it-works2-container {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
+/*-----DT-------*/
+
 @media screen and (min-width: 1280px) {
+  .how-it-works2 {
+    max-width: 1280px;
+    background-image: url(../img/dt-bg-child.png);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .how-it-works2 {
+      background-image: url(../img/dt-bg-child-2x.png);
+    }
+  }
+
   .how-it-works2-title {
     font-size: 40px;
 
     line-height: 1.1;
     letter-spacing: -1.6px;
+  }
+
+  .how-it-works2-container {
+    gap: 110px;
   }
 }
