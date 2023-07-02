@@ -14,9 +14,8 @@ img {
   background-color: var(--secondary-background-color);
   border-radius: 40px;
   background-image: url(../img/mob-bg-child.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-size: contain;
+  
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -95,12 +94,11 @@ letter-spacing: -0.56px;
 
   .how-it-works2 {
     max-width: 704px;
-    padding-top: 40px;
-    padding-bottom: 2px;
-    
-    
+    border-radius: 80px;
+    padding-top: 0;
     
     background-image: url(../img/tab-bg-child.png);
+    background-size: cover;
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -136,6 +134,7 @@ letter-spacing: -0.56px;
 
   .child-img {
     width: 350px;
+    margin-bottom: 0;
     
 
 
