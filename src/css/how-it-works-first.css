@@ -59,7 +59,6 @@
   font-weight: 400;
   line-height: 1.28;
   letter-spacing: -0.56px;
-
   display: flex;
   width: 335px;
   height: 36px;
@@ -74,6 +73,11 @@
 
   .how-it-works-first-text-1 {
     margin-bottom: 20px;
+  }
+
+  .how-it-works-first-image {
+    max-width: 335px;
+    height: 158px;
   }
 }
 

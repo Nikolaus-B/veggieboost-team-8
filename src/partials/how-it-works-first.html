@@ -1,18 +1,37 @@
-<section class="how-it-works-first-section">
+<section id="broccoli-1" class="how-it-works-first-section">
   <div class="how-it-works-first-container">
     <div class="works-fix">
       <h2 class="how-it-works-first-title">
         To order your vegetable basket, simply follow these easy steps
       </h2>
 
-      <img
-        srcset="./img/vegetables-2x.jpeg 2x"
-        class="how-it-works-first-image"
-        src="../img/vegetables-1x.jpeg"
-        alt="broccoli"
-        width="335"
-        height="158"
-      />
+      <div>
+        <picture>
+          <source
+            srcset="./img/vegetables-1x.jpeg 1x, ./img/vegetables-2x.jpeg 2x"
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="
+              ./img/vegetables-tab1x.jpeg 1x,
+              ./img/vegetables-tab2x.jpeg 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./img/vegetables-mob1x.jpeg 1x,
+              ./img/vegetables-mob2x.jpeg 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <img
+            class="how-it-works-first-image"
+            src="./img/vegetables-1x.jpeg"
+            alt="broccoli"
+          />
+        </picture>
+      </div>
     </div>
     <div class="works-fix">
       <p class="how-it-works-first-text-1">
