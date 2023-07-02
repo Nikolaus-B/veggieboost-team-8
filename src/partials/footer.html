@@ -3,13 +3,11 @@
   <div class="footer-upper">
     <div class="footer-logo-block">
     
-      <picture>
-        <source
-        srcset="">
-        
-        <img
-      srcset="./img/mob-footer-broccoli-2x.png 2x"
-      src="./img/mob-footer-broccoli.png" alt="footer-img" >
+      <picture class="footer-picture">
+        <source srcset="./img/footer-broccoli.png 1x , ./img/footer-broccoli-2x.png 2x" media="(min-width: 1158px)">
+        <source srcset="./img/footer-broccoli.png 1x , ./img/footer-broccoli-2x.png 2x" media="(min-width: 768px)">
+        <source srcset=" ./img/mob-footer-broccoli.png 1x, ./img/mob-footer-broccoli-2x.png 2x" media="(max-width: 767px)">
+        <img src="./img/mob-footer-broccoli.png" alt="footer-img" >
       </picture>
       
       <a href="./index.html" class="footer-logo link">
@@ -30,24 +28,30 @@
  <div class="soc-address-block">
     <ul class="footer-soc-list list">
       <li class="footer-soc-item">
-        <a href="" class="footer-soc-link link">
-        <svg class="footer-soc-icon" width="24" height="24">
-        <use href="./img/icons.svg#facebook"></use>
-        </svg>
+        <a href="" class="footer-soc-link link"
+           target="_blank"
+           rel="noopener noreferrer">
+            <svg class="footer-soc-icon" width="24" height="24">
+            <use href="./img/icons.svg#facebook"></use>
+           </svg>
         </a>
       </li>
       <li class="footer-soc-item">
-        <a href="" class="footer-soc-link link">
-          <svg class="footer-soc-icon" width="24" height="24">
-         <use href="./img/icons.svg#instagram"></use>
-          </svg>
+        <a href="" class="footer-soc-link link"
+           target="_blank"
+           rel="noopener noreferrer">
+           <svg class="footer-soc-icon" width="24" height="24">
+             <use href="./img/icons.svg#instagram"></use>
+           </svg>
         </a>
       </li>
       <li class="footer-soc-item">
-        <a href="" class="footer-soc-link link">
-          <svg class="footer-soc-icon" width="24" height="24">
-         <use href="./img/icons.svg#youtube"></use>
-          </svg>
+        <a href="" class="footer-soc-link link"
+           target="_blank"
+           rel="noopener noreferrer">
+           <svg class="footer-soc-icon" width="24" height="24">
+           <use href="./img/icons.svg#youtube"></use>
+           </svg>
         </a>
       </li>
     </ul>
@@ -55,10 +59,9 @@
     <address class="footer-address">
     <ul class="footer-address-list list">
       <li class="footer-address-item"><a href="tel:+380684439426" class="footer-tel-link link">+380 (68) 443-94-26</a></li>
-      <li class="footer-address-item"><a href="" class="footer-address-link link">1678 S.Pioneer Road Salt Lake City UT 84104</a></li>
+      <li class="footer-address-item"><a href="" class="footer-address-link link">1678 S.Pioneer Road Salt Lake City <br> UT 84104</a></li>
     </ul>
     </address>
  </div>
  </div>
-
 </footer>

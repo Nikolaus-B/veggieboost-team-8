@@ -1,6 +1,5 @@
 .footer {
-background: #EAF7E5;
-
+background: var(--light-green-color);
 }
 
 .footer-container {
@@ -14,22 +13,15 @@ flex-wrap: wrap;
 margin-bottom: 40px;
 justify-content: center;
 gap: 20px;
-
-
 }
 
-
 .footer-logo {
-  color: #141414;
-  text-align: center;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.28;
-  letter-spacing: -0.56px;
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-
+font-size: 14px;
+font-weight: 700;
+line-height: 1.28;
+letter-spacing: -0.56px;
+display: flex;
+justify-content: center;
 }
 
 .foter-logo-icon {
@@ -42,18 +34,15 @@ gap: 20px;
 justify-content: center;
 }
 
-
-.footer-item {
-
-}
 .footer-link {
-  color: #141414;
-  text-align: center;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.28;
-  letter-spacing: -0.56px;
+font-size: 14px;
+line-height: 1.28;
+letter-spacing: -0.56px;
+}
 
+.footer-link:hover , .footer-link:focus{
+color: var(--button-color);
+transition: var(--transition-dur-and-func);
 }
 
 .soc-address-block {
@@ -70,8 +59,6 @@ margin-bottom: 40px;
 .footer-soc-item {
 width: 40px;
 height: 40px;
-border-radius: 10px;
-border: 1px solid #141414;
 }
 
 .footer-soc-link {
@@ -80,48 +67,64 @@ height: 100%;
 display: flex;
 justify-content: center;
 align-items: center;
+border-radius: 10px;
+border: 1px solid #141414;
+transition: var(--transition-dur-and-func);
 }
 
-.footer-soc-icon {
-fill: #141414;
+
+.footer-soc-link:hover , .footer-soc-link:focus{
+border-color: var(--button-accent-color);
+color: var(--button-accent-color);
 }
 
-.footer-address {
+.footer-soc-icon{
+fill: currentColor;
 }
 
 .footer-address-list {
 text-align: center;
 }
 
-.footer-address-item {
-
-}
-
 .footer-tel-link{
-  color: #141414;
-  text-align: center;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.28;
+font-size: 14px;
+font-style: normal;
+line-height: 1.28;
+transition: var(--transition-dur-and-func);
 }
 
+.footer-tel-link:hover , .footer-tel-link:focus{
+color: var(--button-color);
+}
+ 
 .footer-address-link {
-  color: #141414;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.28;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 1.28;
 
-  display: block;
-  max-width: 135px;
-  margin: 0 auto;
-  margin-top: 20px;
+display: block;
+max-width: 135px;
+margin: 0 auto;
+transition: var(--transition-dur-and-func);
 }
 
-/* ___________media____________ */
+.footer-address-link:hover , .footer-address-link:focus{
+color: var(--button-color);
+}
+
+.footer-address-item:last-child {
+margin-top: 20px;
+}
+
+/* __________________MEDIA TAB_________________ */
 
 @media screen and (min-width:768px) and (max-width:1279px){
+
+.footer > .container{
+max-width: 768px;
+}
+
 .footer-container{
 display: flex;
 }
@@ -130,7 +133,7 @@ display: flex;
 max-width: 349px;
 }
 
-  .footer-logo-block{
+.footer-logo-block{
 display: block;
 max-width: 349px;
 }
@@ -143,6 +146,25 @@ margin-top: 20px;
 justify-content: center;
 }
 
+.footer-soc-list{
+justify-content: start;
+}
+
+.footer-soc-item{
+width: 44px;
+height: 44px;
+}
+
+.footer-soc-icon{
+width: 28px;
+height: 28px;
+}
+
+.footer-tel-link{
+font-size: 18px;
+line-height: 1.33;
+}
+
 .soc-address-block{
 margin-top: 0;
 margin-left: auto;
@@ -153,11 +175,73 @@ text-align: start;
 }
 
 .footer-address-link{
-width: 173px;
+font-size: 18px;
+line-height: 1.33;
+letter-spacing: -0.36px;
+max-width: 173px;
+margin-left: 0;
+}
+}
+
+/* ____________________MEDIA DESCTOP________________ */
+
+@media screen and (min-width:1280px){
+
+.footer > .container{
+max-width: 1170px;
+}
+
+.footer-container{
+display: flex;
+}
+
+.footer-upper{
+display: flex;
+margin-right: 166px;
+}
+
+.footer-logo-block{
+display: block;
+margin-bottom: 0;
+margin-right: 166px;
+}
+
+.footer-logo{
+margin-top: 20px;
+}
+
+.footer-list{
+align-items: center;
+}
+
+.footer-soc-list{
+justify-content: start;
+}
+
+.footer-soc-item{
+ width: 44px;
+height: 44px;
+}
+  
+.footer-soc-icon{
+width: 28px;
+height: 28px;
+}
+
+.footer-tel-link{
+font-size: 18px;
+}
+
+.footer-address-link{
+font-size: 18px;
+line-height: 1.33;
+letter-spacing: -0.36px;
+text-align: start;
+max-width: 173px;
 margin-left: 0;
 }
 
-
-
-
+.soc-address-block{
+margin-top: 0;
+}
 }
