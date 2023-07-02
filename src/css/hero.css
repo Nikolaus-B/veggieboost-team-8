@@ -249,3 +249,69 @@
       letter-spacing: -.48px;
     }
   }
+
+  /******************************
+    ____SECTION HERO Desktop____
+  /****************************/
+
+  @media screen and (min-width: 1280px) {
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 182px;
+      padding-bottom: 32px;
+    }
+
+    /** +++++ Review Counter Pic +++++ **/
+
+    .list-item-counter {
+      width: 70px;
+      height: 70px;
+    }
+
+    .top-counter-text {
+      margin-bottom: 2px;
+      font-size: 24px;
+      line-height: 1;
+      letter-spacing: -.96px;
+    }
+
+    .bottom-counter-text {
+      font-size: 12px;
+      line-height: 1.17;
+      letter-spacing: -.48px;
+    }
+
+    /** +++++ Hero Title +++++ **/
+
+    .hero-title {
+      width: 672px;
+      font-size: 64px;
+      line-height: 1.17;
+      letter-spacing: -2.16px;
+    }
+
+    /** +++++ Round Button +++++ **/
+
+    .hero-round-btn {
+      width: 132px;
+      height: 132px;
+      font-size: 28px;
+      letter-spacing: -1.12px;
+    }
+
+    .hero-img {
+      margin-bottom: 64px;
+    }
+
+    /** +++++ Teg Buttons +++++ **/
+
+    .hero-btns-wrapper {
+      gap: 8px 8px;
+    }
+
+    .hero-btn {
+      padding: 12px 32px;
+    }
+  }
