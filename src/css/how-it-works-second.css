@@ -1,5 +1,5 @@
 .how-it-works2 {
-  max-width: 375px;
+  max-width: 335px;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -77,7 +77,8 @@
 }
 
 .child-img {
-  margin-bottom: 20px;
+  width: 258px;
+  margin-top: 20px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -85,9 +86,11 @@
 /*-----Tablet-------*/
 
 @media screen and (min-width: 768px) {
+
   .how-it-works2 {
-    max-width: 768px;
-    padding-top: 40px;
+    max-width: 704px;
+    
+    
     background-image: url(../img/tab-bg-child.png);
   }
 
@@ -105,14 +108,24 @@
     line-height: 1.14;
     letter-spacing: -1.12px;
     max-width: 274px;
+    
+
   }
 
   .how-it-works2-container {
     display: flex;
     flex-direction: row-reverse;
     gap: 40px;
-    align-items: center;
-    justify-content: center;
+   align-items: center;
+   
+  }
+
+  
+
+  .child-img {
+    width: 350px;
+    padding-top: 0;
+
   }
 }
 
@@ -120,7 +133,7 @@
 
 @media screen and (min-width: 1280px) {
   .how-it-works2 {
-    max-width: 1280px;
+    max-width: 1216px;
     background-image: url(../img/dt-bg-child.png);
   }
 
@@ -142,5 +155,9 @@
 
   .how-it-works2-container {
     gap: 110px;
+  }
+
+  .child-img {
+    width: 434px;
   }
 }
