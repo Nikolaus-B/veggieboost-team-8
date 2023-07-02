@@ -15,7 +15,7 @@
   }
 
   /*****************************
-  ________SECTION HERO_________
+  _____SECTION HERO Mobile_____
   /****************************/
 
   .hero {
@@ -144,13 +144,14 @@
     border-radius: 50px;
   }
 
-  .hero-buttons-list {
+  .hero-buttons-wrapper {
     display: flex;
-    width: calc((100% / 2) + 33px);
-    margin-left: auto;
-    justify-content: flex-end;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 8px 4px;
+  }
+
+  .buttons-wrapper-item {
+    margin-left: auto;
   }
 
   .hero-button {
