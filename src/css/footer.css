@@ -12,9 +12,12 @@ padding-bottom: 80px;
 display: flex;
 flex-wrap: wrap;
 margin-bottom: 40px;
+justify-content: center;
+gap: 20px;
 
 
 }
+
 
 .footer-logo {
   color: #141414;
@@ -114,5 +117,47 @@ text-align: center;
   max-width: 135px;
   margin: 0 auto;
   margin-top: 20px;
-  
+}
+
+/* ___________media____________ */
+
+@media screen and (min-width:768px) and (max-width:1279px){
+.footer-container{
+display: flex;
+}
+
+.footer-upper{
+max-width: 349px;
+}
+
+  .footer-logo-block{
+display: block;
+max-width: 349px;
+}
+
+.footer-logo{
+margin-top: 20px;
+}
+
+.footer-list{
+justify-content: center;
+}
+
+.soc-address-block{
+margin-top: 0;
+margin-left: auto;
+}
+
+.footer-address-list{
+text-align: start;
+}
+
+.footer-address-link{
+width: 173px;
+margin-left: 0;
+}
+
+
+
+
 }
