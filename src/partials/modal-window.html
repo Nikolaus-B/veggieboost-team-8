@@ -1,4 +1,3 @@
-<!-- ДОБАВИТИ IS-HIDDEN -->
 <div class="backdrop is-hidden" data-modal>
   <div class="modal-container">
     <button type="button" class="btn-menu-close" data-modal-close>
@@ -11,98 +10,94 @@
     <div class="order-container">
       <ul class="list-order list">
         <li class="list-order-item">
+          <input
+            type="checkbox"
+            class="modal-input-checkbox visually-hidden"
+            name="user-order"
+            id="user-order-cabbage"
+            value="true"
+          />
+          <label for="user-order-cabbage" class="checkbox-label">
+            <span class="span-check">
+              <svg class="icon-check" width="10" height="10">
+                <use href="./img/icons.svg#pick"></use>
+              </svg>
+            </span>
+          </label>
           <div class="modal-card-wrapper">
             <h2 class="order-item-title">Cabbage Basket</h2>
             <p class="order-item-descr">Plant</p>
-
-            <input
-              type="checkbox"
-              class="modal-input-checkbox visually-hidden"
-              name="user-order"
-              id="user-order-cabbage"
-              value="true"
+            <img
+              srcset="./img/dt-cabbage-modal.png, ./img/dt-cabbage-modal-2x.png"
+              src="./img/dt-cabbage-modal.png"
+              alt="A basket of cabbage"
+              width="172"
+              height="142"
+              class="modal-card-pic"
             />
-            <label for="user-order-cabbage" class="checkbox-label">
-              <span class="span-check">
-                <svg class="icon-check" width="10" height="10">
-                  <use href="./img/icons.svg#pick"></use>
-                </svg>
-              </span>
-              <img
-                srcset="
-                  ./img/dt-cabbage-modal.png,
-                  ./img/dt-cabbage-modal-2x.png
-                "
-                src="./img/dt-cabbage-modal.png"
-                alt="A basket of cabbage"
-                width="172"
-                height="142"
-                class="modal-card-pic"
-              />
-            </label>
           </div>
         </li>
 
         <li class="list-order-item">
+          <input
+            type="checkbox"
+            class="modal-input-checkbox visually-hidden"
+            name="user-order"
+            id="user-order-tomato"
+            value="true"
+          />
+          <label for="user-order-tomato" class="checkbox-label">
+            <span class="span-check">
+              <svg class="icon-check" width="10" height="10">
+                <use href="./img/icons.svg#pick"></use>
+              </svg>
+            </span>
+          </label>
           <div class="modal-card-wrapper">
             <h2 class="order-item-title">Tomato Basket</h2>
             <p class="order-item-descr">Plant</p>
-            <input
-              type="checkbox"
-              class="modal-input-checkbox visually-hidden"
-              name="user-order"
-              id="user-order-tomato"
-              value="true"
-            />
-            <label for="user-order-tomato" class="checkbox-label">
-              <span class="span-check">
-                <svg class="icon-check" width="10" height="10">
-                  <use href="./img/icons.svg#pick"></use>
-                </svg>
-              </span>
 
-              <img
-                srcset="./img/dt-tomato-modal.png, ./img/dt-tomato-modal-2x.png"
-                src="./img/dt-tomato-modal.png"
-                alt="A basket of tomato"
-                width="172"
-                height="142"
-                class="modal-card-pic"
-              />
-            </label>
+            <img
+              srcset="./img/dt-tomato-modal.png, ./img/dt-tomato-modal-2x.png"
+              src="./img/dt-tomato-modal.png"
+              alt="A basket of tomato"
+              width="172"
+              height="142"
+              class="modal-card-pic"
+            />
           </div>
         </li>
 
         <li class="list-order-item">
+          <input
+            type="checkbox"
+            class="modal-input-checkbox visually-hidden"
+            name="user-order"
+            id="user-order-vegetables"
+            value="true"
+          />
+          <label for="user-order-vegetables" class="checkbox-label">
+            <span class="span-check">
+              <svg class="icon-check" width="10" height="10">
+                <use href="./img/icons.svg#pick"></use>
+              </svg>
+            </span>
+          </label>
           <div class="modal-card-wrapper">
             <h2 class="order-item-title">Vegetables Basket</h2>
             <p class="order-item-descr">Plant</p>
-            <input
-              type="checkbox"
-              class="modal-input-checkbox visually-hidden"
-              name="user-order"
-              id="user-order-vegetables"
-              value="true"
-            />
-            <label for="user-order-vegetables" class="checkbox-label">
-              <span class="span-check">
-                <svg class="icon-check" width="10" height="10">
-                  <use href="./img/icons.svg#pick"></use>
-                </svg>
-              </span>
 
-              <img
-                srcset="
-                  ./img/dt-vegetables-basket-modal.png,
-                  ./img/dt-vegetables-basket-modal-2x.png
-                "
-                src="./img/dt-vegetables-basket-modal.png"
-                alt="A basket of green vegetables"
-                width="172"
-                height="142"
-                class="modal-card-pic"
-              />
-            </label>
+            <img
+              srcset="
+                ./img/dt-vegetables-basket-modal.png,
+                ./img/dt-vegetables-basket-modal-2x.png
+              "
+              src="./img/dt-vegetables-basket-modal.png"
+              alt="A basket of green vegetables"
+              width="172"
+              height="142"
+              class="modal-card-pic"
+            />
           </div>
         </li>
       </ul>
@@ -110,37 +105,37 @@
 
     <div class="form-container">
       <form class="modal-form">
-      <input
-        type="text"
-        name="user-name"
-        id="user-name"
-        class="modal-input"
-        placeholder="Enter full name..."
-      />
+        <input
+          type="text"
+          name="user-name"
+          id="user-name"
+          class="modal-input"
+          placeholder="Enter full name..."
+        />
 
-      <input
-        type="email"
-        name="user-email"
-        id="user-email"
-        class="modal-input"
-        placeholder="Enter email..."
-      />
+        <input
+          type="email"
+          name="user-email"
+          id="user-email"
+          class="modal-input"
+          placeholder="Enter email..."
+        />
 
-      <input
-        type="text"
-        name="user-card"
-        id="user-card"
-        class="modal-input"
-        placeholder="Enter card..."
-      />
+        <input
+          type="text"
+          name="user-card"
+          id="user-card"
+          class="modal-input"
+          placeholder="Enter card..."
+        />
 
-      <textarea
-        name="user-comment"
-        id="user-comment"
-        class="textarea-input"
-        placeholder="Enter comments..."
-      ></textarea>
-    </form>
+        <textarea
+          name="user-comment"
+          id="user-comment"
+          class="textarea-input"
+          placeholder="Enter comments..."
+        ></textarea>
+      </form>
     </div>
     <button type="submit" class="btn-submit">Submit</button>
     <img
@@ -149,8 +144,8 @@
       alt=""
       width="444"
       height="413"
-      class="modal-pic"
+      class="modal-pic-girl"
     />
-
+    
   </div>
 </div>
