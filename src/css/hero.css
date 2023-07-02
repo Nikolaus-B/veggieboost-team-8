@@ -10,16 +10,17 @@
   }
 
   button {
-    margin: 0;
     padding: 0;
+    margin: 0;
   }
 
   /*****************************
-  _____SECTION HERO Mobile_____
+  _____SECTION: HERO Mobile_____
   /****************************/
 
-  .hero {
-    padding: 48px 20px 20px 20px;
+  .container {
+    padding-top: 48px;
+    padding-bottom: 20px;
     background-color: var(--button-accent-color);
   }
 
@@ -50,8 +51,8 @@
 
   .list-item-counter {
     display: flex;
-    min-width: 44px;
-    min-height: 44px;
+    width: 44px;
+    height: 44px;
     background-color: var(--main-white-color);
     border-radius: 44px;
     flex-direction: column;
@@ -64,7 +65,7 @@
     font-size: 14px;
     font-weight: 500;
     line-height: 1;
-    letter-spacing: -0.56px;
+    letter-spacing: -.56px;
     color: var(--main-text-color);
     text-shadow: var(--shadow-text);
     text-transform: uppercase;
@@ -73,7 +74,7 @@
   .bottom-counter-text {
     font-size: 8px;
     line-height: 0.8;
-    letter-spacing: -0.32px;
+    letter-spacing: -.36px;
     color: var(--main-text-color);
     text-shadow: var(--shadow-text);
     background: var(--main-white-color);
@@ -98,6 +99,7 @@
   }
 
   .hero-text {
+    max-width: 490px;
     margin-bottom: 20px;
     font-size: 14px;
     line-height: 1.29;
@@ -108,13 +110,13 @@
 
   /** +++++ Round Button +++++ **/
 
-  .hero-round-button {
+  .hero-round-btn {
     width: 68px;
     height: 68px;
     margin-bottom: 8px;
     font-size: 14px;
     line-height: 1.07;
-    letter-spacing: -0.56px;
+    letter-spacing: -.56px;
     color: var(--button-color);
     background: var(--round-btn-bg-color);
     border: none;
@@ -124,8 +126,8 @@
       background-color var(--transition-dur-and-func);
   }
 
-  .hero-round-button:hover,
-  .hero-round-button:focus {
+  .hero-round-btn:hover,
+  .hero-round-btn:focus {
     color: var(--button-accent-color);
     background-color: var(--light-green-color);
   }
@@ -136,29 +138,29 @@
 
   /** +++++ Teg Buttons +++++ **/
 
-  .button {
+  .btn {
     font-weight: 500;
     text-align: center;
     text-shadow: var(--shadow-text);
     text-transform: uppercase;
-    border-radius: 50px;
+    border-radius: 100px;
   }
 
-  .hero-buttons-wrapper {
+  .hero-btns-wrapper {
     display: flex;
     flex-direction: column;
     gap: 8px 4px;
   }
 
-  .buttons-wrapper-item {
+  .btns-wrapper-item {
     margin-left: auto;
   }
 
-  .hero-button {
+  .hero-btn {
     padding: 8px 14px;
     font-size: 10px;
     line-height: 1.2;
-    letter-spacing: -0.4px;
+    letter-spacing: -.4px;
     color: var(--main-white-color);
     background-color: transparent;
     border: 1px solid var(--main-white-color);
@@ -167,8 +169,83 @@
       background-color var(--transition-dur-and-func);
   }
 
-  .hero-button:hover,
-  .hero-button:focus {
+  .hero-btn:hover,
+  .hero-btn:focus {
     color: var(--main-text-color);
     background-color: var(--hov-tag-btn-bg-color);
+  }
+
+  /****************************
+  ____SECTION HERO Tablet_____
+/****************************/
+
+  @media screen and (min-width: 768px) {
+
+    .container {
+      padding-top: 64px;
+      padding-bottom: 34px;
+    }
+
+    .hero-list {
+      margin-bottom: 16px;
+    }
+
+    /** +++++ Review Counter Pic +++++ **/
+
+    .list-item-counter {
+      width: 54px;
+      height: 54px;
+    }
+
+    .top-counter-text {
+      font-size: 18px;
+      line-height: 1.33;
+      letter-spacing: -.72px;
+    }
+
+    .bottom-counter-text {
+      font-size: 10px;
+      line-height: 1.2;
+      letter-spacing: -.4px;
+    }
+
+    /** +++++ Hero Title +++++ **/
+
+    .hero-title {
+      margin-bottom: 16px;
+      font-size: 54px;
+      line-height: 1.18;
+      letter-spacing: -2.16px;
+    }
+
+    .hero-text {
+      margin-bottom: 32px;
+    }
+
+    /** +++++ Round Button +++++ **/
+
+    .hero-round-btn {
+      width: 114px;
+      height: 114px;
+      font-size: 24px;
+      line-height: 1;
+      letter-spacing: -.96px;
+    }
+
+    .hero-picture {
+      margin-bottom: 8px;
+    }
+
+    .hero-img {
+      margin: 0 auto;
+    }
+
+    /** +++++ Teg Buttons +++++ **/
+
+    .hero-btn {
+      padding: 10px 20px;
+      font-size: 12px;
+      line-height: 1.17;
+      letter-spacing: -.48px;
+    }
   }
