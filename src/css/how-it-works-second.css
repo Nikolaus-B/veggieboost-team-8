@@ -15,7 +15,6 @@ img {
   border-radius: 40px;
   background-image: url(../img/mob-bg-child.png);
   background-size: contain;
-  
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -53,7 +52,7 @@ img {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.3;
-letter-spacing: -0.56px;
+  letter-spacing: -0.56px;
   max-width: 199px;
 }
 
@@ -91,12 +90,11 @@ letter-spacing: -0.56px;
 /*-----Tablet-------*/
 
 @media screen and (min-width: 768px) {
-
   .how-it-works2 {
     max-width: 704px;
     border-radius: 80px;
     padding-top: 0;
-    
+
     background-image: url(../img/tab-bg-child.png);
     background-size: cover;
   }
@@ -109,15 +107,15 @@ letter-spacing: -0.56px;
       background-image: url(../img/tab-bg-child-2x.png);
     }
   }
-  .how-it-works2-text {letter-spacing: -0.56px;}
+  .how-it-works2-text {
+    letter-spacing: -0.56px;
+  }
 
   .how-it-works2-title {
     font-size: 28px;
     line-height: 1.14;
     letter-spacing: -1.12px;
     max-width: 274px;
-    
-
   }
 
   .how-it-works2-container {
@@ -126,18 +124,11 @@ letter-spacing: -0.56px;
     gap: 40px;
     align-items: center;
     justify-content: center;
-   
-   
   }
-
-  
 
   .child-img {
     width: 350px;
     margin-bottom: 0;
-    
-
-
   }
 }
 
@@ -159,9 +150,9 @@ letter-spacing: -0.56px;
       background-image: url(../img/dt-bg-child-2x.png);
     }
   }
-.how-it-works2-container {
-  gap: 110px;
-}
+  .how-it-works2-container {
+    gap: 110px;
+  }
   .how-it-works2-title {
     max-width: 512px;
     font-size: 40px;
@@ -181,13 +172,12 @@ letter-spacing: -0.56px;
   .how-it-works2-text {
     max-width: 289px;
   }
-  
+
   .second-item-text {
     max-width: 166px;
   }
 
   .child-img {
     width: 434px;
-    
   }
 }
