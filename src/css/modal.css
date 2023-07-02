@@ -202,6 +202,7 @@
     font-weight: 400;
     line-height: 18px;
     letter-spacing: -0.56px;
+    
   }
 
   .textarea-input {
@@ -260,6 +261,10 @@
     height: 8px;
   }
 
+  .btn-submit {
+    padding: 15px 35px;
+  }
+
   .modal-pic-girl {
     display: block;
     position: absolute;
@@ -309,6 +314,10 @@
   .modal-form {
     display: flex;
     flex-direction: column;
+  }
+
+  .btn-submit {
+    padding: 15px 35px;
   }
 
   .modal-pic-girl {
