@@ -113,8 +113,8 @@ transition: var(--transition-dur-and-func);
 color: var(--button-color);
 }
 
-.footer-address-item:last-child {
-margin-top: 20px;
+.footer-address-item:first-child {
+margin-bottom: 20px;
 }
 
 /* __________________MEDIA TAB_________________ */
