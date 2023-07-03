@@ -3,13 +3,14 @@
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-
-  padding-top: 40px;
   background-color: var(--secondary-background-color);
   border-radius: 40px;
   background-image: url(../img/mob-bg-child.png);
   background-size: contain;
+  padding-top: 40px;
 }
+
+
 
 @media (min-device-pixel-ratio: 2),
   (-webkit-min-device-pixel-ratio: 2),
@@ -55,8 +56,6 @@
   max-width: 166px;
 }
 
-
-
 .number-item {
   width: 40px;
   height: 40px;
@@ -86,8 +85,6 @@
 
 @media screen and (min-width: 768px) {
   .how-it-works2 {
-    position: relative;
-
     max-width: 704px;
     border-radius: 80px;
     padding-top: 80px;
@@ -105,15 +102,13 @@
     }
   }
 
-  .section-text-content {
+  .how-it-works2-container {
     display: flex;
-    flex-direction: column;
     flex-direction: row-reverse;
   }
 
   .how-it-works2-text {
     letter-spacing: -0.56px;
-    
   }
 
   .number-list {
@@ -128,12 +123,20 @@
   }
 
   .child-img {
-    position: absolute;
-    left: 0;
-    bottom: 0;
     width: 350px;
 
     margin-top: 0;
+  }
+
+  @media screen and (min-width: 376px) {
+    .how-it-works2 {
+      position: relative;
+    }
+    .child-img {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
   }
 }
 
@@ -143,10 +146,6 @@
   .how-it-works2 {
     max-width: 1216px;
     background-image: url(../img/dt-bg-child.png);
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 80px;
-    padding-bottom: 84px;
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -158,6 +157,23 @@
     }
   }
 
+  .how-it-works2-container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .section-text-content {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .section-text-content-wrap {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    padding-right: 60px;
+  }
+
   .how-it-works2-title {
     max-width: 512px;
     font-size: 40px;
@@ -166,6 +182,7 @@
     letter-spacing: -1.6px;
     margin-bottom: 44px;
   }
+
   .how-it-works2-list {
     gap: 28px;
   }
@@ -177,12 +194,15 @@
   .how-it-works2-text {
     max-width: 289px;
   }
+
   .second-item-text {
     max-width: 166px;
   }
 
   .child-img {
     width: 434px;
+
+    bottom: 0;
     left: 80px;
   }
 }
