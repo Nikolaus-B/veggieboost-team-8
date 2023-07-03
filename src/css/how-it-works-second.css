@@ -10,9 +10,7 @@
   padding-top: 40px;
 }
 
-.how-it-works2-container {
 
-}
 
 
 
@@ -118,9 +116,7 @@
     letter-spacing: -0.56px;
   }
 
-  .number-list {
-    gap: 24px;
-  }
+
 
   .how-it-works2-title {
     font-size: 28px;
@@ -153,6 +149,7 @@
   .how-it-works2 {
     max-width: 1216px;
     background-image: url(../img/dt-bg-child.png);
+    background-size: cover;
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -188,14 +185,6 @@
     line-height: 1.1;
     letter-spacing: -1.6px;
     margin-bottom: 40px;
-  }
-
-  .how-it-works2-list {
-    gap: 28px;
-  }
-
-  .number-list {
-    gap: 20px;
   }
 
   .how-it-works2-text {
