@@ -1,3 +1,49 @@
-<section>
-  <p>We will call you</p>
+<section class="we-will-call-you" id="we-will-call-you">
+  <div class="container container-callback">
+    <div>
+      <h2 class="mob-callback-title">
+        Fresh Harvest Box has got&nbsp;you covered
+      </h2>
+      <p class="mob-callback-body">
+        Our boxes are packed with delicious, nutritious vegetables, perfect for
+        anyone looking to eat healthier or support local farmers. Order your box
+        today and start enjoying the best that nature has to offer!
+      </p>
+      <form class="mob-field">
+        <label for="user-tel" class="input-label"></label>
+        <div class="input-wrap">
+          <input
+            type="tel"
+            name="user-tel"
+            id="user-tel"
+            placeholder="+ 380 ()"
+            pattern="\+380\d{9}"
+            title="Має бути + 380 і 9 цифр"
+            class="tel-input"
+          />
+          <button class="button-recall">Recall</button>
+        </div>
+      </form>
+    </div>
+    <div class="mob-callback-img">
+      <picture class="fon-img">
+        <source
+          srcset="./img/dt-woman.png 1x, ./img/dt-woman-2x.png 2x"
+          media="(min-width:1280px)"
+        />
+
+        <source
+          srcset="./img/tab-woman.png 1x, ./img/tab-woman-2x.png 2x"
+          media="(min-width:768px)"
+        />
+
+        <img
+          class="img-woman"
+          src="./img/mob-woman.png"
+          srcset="./img/mob-woman.png 1x, ./img/mob-woman-2x.png 2x"
+          alt="The girl with broccoli"
+        />
+      </picture>
+    </div>
+  </div>
 </section>
