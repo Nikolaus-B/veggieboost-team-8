@@ -120,11 +120,6 @@ img {
     height: 261px;
   }
 
-  .section-container {
-    max-width: 704px;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
   .vegetables-section {
     padding-top: 101px;
     padding-bottom: 100px;
@@ -201,9 +196,6 @@ img {
 
 /* desk-top */
 @media screen and (min-width: 1280px) {
-  .section-container {
-    max-width: 1216px;
-  }
   .vegetables-section {
     padding-top: 124px;
     padding-bottom: 124px;
