@@ -6,7 +6,7 @@
   background-color: var(--secondary-background-color);
   border-radius: 40px;
   background-image: url(../img/mob-bg-child.png);
-  background-size: contain;
+  background-size: cover;
   padding-top: 40px;
 }
 
@@ -89,6 +89,7 @@
     padding-top: 80px;
     padding-bottom: 80px;
     background-image: url(../img/tab-bg-child.png);
+    background-size: cover;
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -97,6 +98,7 @@
     (min-resolution: 2dppx) {
     .how-it-works2 {
       background-image: url(../img/tab-bg-child-2x.png);
+      position: relative;
     }
   }
 
@@ -116,23 +118,17 @@
     max-width: 274px;
   }
 
-  .child-img {
-    width: 350px;
 
-    margin-top: 0;
-  }
 
-  @media screen and (min-width: 376px) {
-    .how-it-works2 {
-      position: relative;
-    }
     .child-img {
       position: absolute;
       left: 0;
       bottom: 0;
+      width: 350px;
+      margin-top: 0;
     }
   }
-}
+
 
 /*-----DT-------*/
 
@@ -140,7 +136,7 @@
   .how-it-works2 {
     max-width: 1216px;
     background-image: url(../img/dt-bg-child.png);
-    background-size: cover;
+    
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -155,11 +151,6 @@
   .how-it-works2-container {
     display: flex;
     flex-direction: row-reverse;
-  }
-
-  .section-text-content {
-    margin-top: auto;
-    margin-bottom: auto;
   }
 
   .section-text-content-wrap {
@@ -182,13 +173,10 @@
     max-width: 289px;
   }
 
-  .second-item-text {
-    max-width: 166px;
-  }
+ 
 
   .child-img {
     width: 434px;
-
     bottom: 0;
     left: 80px;
   }
