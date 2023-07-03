@@ -32,15 +32,14 @@ body {
 .header-container {
   box-sizing: border-box;
   background-color: var(--main-wtite-color);
-  width: 375px;
+  width: 335px;
   height: 50px;
   position: fixed;
-  /* left: 0; */
   top: 0;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
+  left: 0;
+  right: 0;
 }
 
 .header-nav {
@@ -71,6 +70,7 @@ body {
 .mobile-menu-btn {
   width: 24px;
   height: 24px;
+  margin-left: auto;
 }
 
 .mobile-menu-btn-svg {
@@ -81,10 +81,9 @@ body {
 
 @media screen and (min-width: 768px) {
   .header-container {
-    width: 768px;
-    /* padding-left: 32px;
-    padding-right: 32px; */
-    justify-content: start;
+    width: 704px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 
   .mobile-menu-btn {
@@ -138,7 +137,7 @@ body {
 
 @media screen and (min-width: 1280px) {
   .header-container {
-    width: 1280px;
+    width: 1216px;
   }
   .header-nav {
     margin-right: 308px;
