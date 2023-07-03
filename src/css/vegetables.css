@@ -73,7 +73,7 @@ img {
   font-weight: 500;
   line-height: 1.28;
   letter-spacing: -0.72px;
-  margin-top: auto;
+  margin-top: 22px;
 }
 
 .order-button {
@@ -185,6 +185,7 @@ img {
     font-size: 18px;
     line-height: 1.33;
     letter-spacing: -0.72px;
+    margin-top: auto;
   }
 
   .order-button {
