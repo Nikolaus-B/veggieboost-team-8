@@ -15,6 +15,7 @@ justify-content: center;
 gap: 20px;
 }
 
+
 .footer-logo {
 font-size: 14px;
 font-weight: 700;
@@ -115,6 +116,13 @@ color: var(--button-color);
 
 .footer-address-item:first-child {
 margin-bottom: 20px;
+}
+
+@media screen and (max-width: 767px) {
+.footer-img{
+width: 335px;
+height: 172px;
+}    
 }
 
 /* __________________MEDIA TAB_________________ */
