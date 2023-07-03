@@ -42,6 +42,10 @@
   align-items: center;
 }
 
+.section-text-content {
+  margin-bottom: 20px;
+}
+
 .how-it-works2-text {
   text-shadow: var(--shadow-text);
   font-size: 14px;
