@@ -106,6 +106,9 @@
       
     }
   }
+        .section-text-content {
+          margin-bottom: 0;
+        }
 
   .how-it-works2-container {
     display: flex;
