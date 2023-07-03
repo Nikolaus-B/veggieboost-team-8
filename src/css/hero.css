@@ -136,28 +136,20 @@
     background-color: var(--light-green-color);
   }
 
-  .hero-img {
-    position: relative;
-    margin: 0 auto 16px auto;
-  }
-
-  /* .wrapper:last-child {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .hero-pic {
-    width: 278px;
-    height: 228px;
-    margin: -28px auto 0 auto;
-    background-image: url(../img/dt-girl.png);
-    background-size: contain;
-    background-position: center 25px;
-    background-repeat: no-repeat;
-    margin-bottom: 16px
-  } */
-
   /** +++++ Teg Buttons +++++ **/
+
+  .wrapper {
+    position: relative;
+  }
+
+  .hero-picture {
+    position: relative;
+    bottom: -8px;
+  }
+
+  .hero-img {
+    margin: -13px auto 0 auto;
+  }
 
   .btn {
     font-weight: 500;
@@ -170,11 +162,17 @@
   .hero-btns-wrapper {
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
     gap: 8px 4px;
   }
 
   .btns-wrapper-item {
     margin-left: auto;
+  }
+
+  .hero-btns-wrapper {
+    z-index: 999;
+    position: relative;
   }
 
   .hero-btn {
@@ -205,10 +203,6 @@
     .container {
       padding-top: 64px;
       padding-bottom: 34px;
-    }
-
-    .wrapper:not(:last-child) {
-      margin-bottom: 16px;
     }
 
     /** +++++ Review Counter Pic +++++ **/
@@ -253,8 +247,12 @@
       letter-spacing: -.96px;
     }
 
+    .hero-picture {
+      bottom: -26px;
+    }
+
     .hero-img {
-      margin-bottom: 8px;
+      margin: -34px auto 0 auto;
     }
 
     /** +++++ Teg Buttons +++++ **/
@@ -278,6 +276,14 @@
       justify-content: space-between;
       padding-top: 182px;
       padding-bottom: 32px;
+    }
+
+    .wrapper:not(:last-child) {
+      margin-bottom: 92px;
+    }
+
+    .wrapper:last-child {
+      padding-top: 42px;
     }
 
     /** +++++ Review Counter Pic +++++ **/
@@ -318,8 +324,13 @@
       letter-spacing: -1.12px;
     }
 
+    .hero-picture {
+      bottom: 0px;
+    }
+
     .hero-img {
-      margin-bottom: 64px;
+      margin: 0 auto 16px auto;
+      margin-bottom: 21px;
     }
 
     /** +++++ Teg Buttons +++++ **/
