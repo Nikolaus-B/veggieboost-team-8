@@ -99,7 +99,7 @@
     (min-resolution: 2dppx) {
     .how-it-works2 {
       background-image: url(../img/tab-bg-child-2x.png);
-      position: relative;
+      
     }
   }
 
