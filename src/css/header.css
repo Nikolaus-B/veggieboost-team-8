@@ -13,6 +13,9 @@
   .header-basket-btn {
     display: none;
   }
+  .header-basket-svg {
+    display: none;
+  }
 }
 
 body {
