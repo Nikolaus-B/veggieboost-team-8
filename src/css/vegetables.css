@@ -3,6 +3,10 @@
   padding-bottom: 80px;
 }
 
+img {
+  height: 249px;
+}
+
 .section-title {
   font-weight: 500;
   font-size: 24px;
@@ -46,12 +50,12 @@
   font-weight: 700;
   line-height: 1.16;
   letter-spacing: -0.96px;
+  margin-bottom: 8px;
 }
 
 .card-discription {
   font-size: 14px;
   line-height: 1.28;
-  margin-top: 8px;
   letter-spacing: -0.28px;
 }
 
@@ -105,7 +109,6 @@
   font-weight: 500;
   line-height: 1.28;
   text-transform: uppercase;
-  margin: 0;
 }
 
 @media screen and (max-width: 1279px) {
@@ -116,6 +119,11 @@
 
 /* tablet */
 @media screen and (min-width: 768px) {
+  img {
+    width: 321px;
+    height: 261px;
+  }
+
   .section-container {
     max-width: 704px;
     padding-left: 32px;
