@@ -108,8 +108,8 @@ body {
     transition: color var(--transition-dur-and-func);
   }
 
-  .header-nav-item:hover,
-  .header-nav-item:focus {
+  .header-nav-link:hover,
+  .header-nav-link:focus {
     color: var(--button-accent-color);
   }
 
