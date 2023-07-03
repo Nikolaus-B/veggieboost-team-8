@@ -3,16 +3,12 @@
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-    background-color: var(--secondary-background-color);
-    border-radius: 40px;
-    background-image: url(../img/mob-bg-child.png);
-    background-size: contain;
+  background-color: var(--secondary-background-color);
+  border-radius: 40px;
+  background-image: url(../img/mob-bg-child.png);
+  background-size: contain;
   padding-top: 40px;
 }
-
-
-
-
 
 @media (min-device-pixel-ratio: 2),
   (-webkit-min-device-pixel-ratio: 2),
@@ -32,9 +28,7 @@
   text-transform: uppercase;
   margin-bottom: 40px;
 }
-.section-text-content {
-  margin-bottom: 20px;
-}
+
 
 .number-list {
   display: flex;
@@ -81,7 +75,7 @@
 
 .child-img {
   width: 258px;
- 
+
   margin-right: auto;
   margin-left: auto;
 }
@@ -95,7 +89,6 @@
     padding-top: 80px;
     padding-bottom: 80px;
     background-image: url(../img/tab-bg-child.png);
-    
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -115,8 +108,6 @@
   .how-it-works2-text {
     letter-spacing: -0.56px;
   }
-
-
 
   .how-it-works2-title {
     font-size: 28px;
