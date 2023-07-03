@@ -35,10 +35,8 @@ img {
 }
 
 .vegetables-card {
-  display: flex;
-  flex-direction: column;
+  display: block;
   max-width: 299px;
-  height: 383px;
   padding: 40px 18px 20px 18px;
   background-color: var(--light-green-color);
   border-radius: 20px;
@@ -113,12 +111,6 @@ img {
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 1279px) {
-  .radish-card {
-    display: none;
-  }
-}
-
 /* tablet */
 @media screen and (min-width: 768px) {
   img {
@@ -157,8 +149,9 @@ img {
   }
 
   .vegetables-card {
+    display: flex;
+    flex-direction: column;
     max-width: calc((100%-20px) / 2);
-    height: 377px;
     margin: 0;
     padding: 64px 10px 24px 11px;
   }
@@ -233,5 +226,11 @@ img {
     font-size: 32px;
     line-height: 1.18;
     letter-spacing: -1.28px;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .radish-card {
+    display: none;
   }
 }
