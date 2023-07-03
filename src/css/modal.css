@@ -189,7 +189,7 @@
 @media screen and (min-width: 768px) {
 
   .modal-container {
-    max-width: 624px;
+    max-width: 704px;
     min-height: 853px;
     padding: 40px 40px 0 40px;
     background-image: url(../img/girl-modal-window.png);
@@ -306,7 +306,7 @@
 @media screen and (min-width: 1280px) {
 
   .modal-container {
-    max-width: 811px;
+    max-width: 891px;
     padding: 40px;
     background-image: url(../img/girl-modal-window.png);
     background-repeat: no-repeat;
