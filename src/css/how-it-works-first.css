@@ -1,3 +1,209 @@
-.how-it-works-first {
-  margin: 0;
+.how-it-works-first-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.how-it-works-first-container {
+  display: flex;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.how-it-works-first-title {
+  color: #141414;
+  text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
+  font-size: 28px;
+  font-family: DM Sans;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: -1.12px;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.how-it-works-first-image {
+  border-radius: 100px;
+  background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+
+.how-it-works-first-text-1 {
+  color: #141414;
+  text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.28;
+  letter-spacing: -0.56px;
+  display: flex;
+  height: 54px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.how-it-works-first-text-2 {
+  color: #141414;
+  text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.28;
+  letter-spacing: -0.56px;
+  display: flex;
+  height: 36px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+  .how-it-works-first-container {
+    max-width: 335px;
+  }
+
+  .how-it-works-first-title {
+    margin-bottom: 20px;
+    max-width: 335px;
+  }
+
+  .how-it-works-first-text-1 {
+    margin-bottom: 20px;
+    max-width: 335px;
+  }
+
+  .how-it-works-first-text-2 {
+    max-width: 335px;
+  }
+
+  .how-it-works-first-image {
+    width: 335px;
+    height: 158px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .how-it-works-first-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .how-it-works-first-container {
+    width: 704px;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin: auto;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .how-it-works-first-title {
+    width: 386px;
+    font-size: 40px;
+    line-height: 1.1;
+    letter-spacing: -1.6px;
+    text-transform: uppercase;
+    margin-right: 8px;
+  }
+
+  .how-it-works-first-image {
+    display: inline;
+    width: 310px;
+    height: 176px;
+  }
+
+  .works-fix {
+    display: flex;
+    row-gap: 40px;
+  }
+  .how-it-works-first-text-1 {
+    margin-right: 20px;
+    width: 317px;
+    height: 96px;
+    font-size: 18px;
+    line-height: 1.3;
+    letter-spacing: -0.72px;
+  }
+
+  .how-it-works-first-text-2 {
+    width: 279px;
+    height: 72px;
+    font-size: 18px;
+    line-height: 1.3;
+    letter-spacing: -0.72px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .how-it-works-first-section {
+    padding-top: 124px;
+    padding-bottom: 124px;
+  }
+
+  .how-it-works-first-container {
+    width: 1216px;
+    margin: auto;
+    padding-left: 32px;
+    padding-right: 32px;
+    gap: 40px;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .how-it-works-first-title {
+    display: flex;
+    width: 614px;
+    height: 170px;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1.04;
+    letter-spacing: -1.92px;
+    text-transform: uppercase;
+    margin-right: 192px;
+  }
+
+  .how-it-works-first-image {
+    display: inline-flex;
+    width: 410px;
+    height: 170px;
+  }
+
+  .works-fix {
+    display: flex;
+    row-gap: 40px;
+  }
+
+  .how-it-works-first-text-1 {
+    display: flex;
+    width: 353px;
+    height: 96px;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.33;
+    letter-spacing: -0.72px;
+    margin-right: 40px;
+  }
+  .how-it-works-first-text-2 {
+    display: flex;
+    width: 294px;
+    height: 72px;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.33;
+    letter-spacing: -0.72px;
+  }
 }
