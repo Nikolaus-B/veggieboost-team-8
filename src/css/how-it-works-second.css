@@ -91,10 +91,12 @@ img {
 
 @media screen and (min-width: 768px) {
   .how-it-works2 {
+    position: relative;
+
     max-width: 704px;
     border-radius: 80px;
-    padding-top: 0;
-
+    padding-top: 80px;
+    padding-bottom: 80px;
     background-image: url(../img/tab-bg-child.png);
     background-size: cover;
   }
@@ -107,6 +109,11 @@ img {
       background-image: url(../img/tab-bg-child-2x.png);
     }
   }
+
+  .text-wrap {
+    display: flex;
+    flex-direction: row-reverse;
+  }
   .how-it-works2-text {
     letter-spacing: -0.56px;
   }
@@ -118,17 +125,13 @@ img {
     max-width: 274px;
   }
 
-  .how-it-works2-container {
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 40px;
-    align-items: center;
-    justify-content: center;
-  }
-
   .child-img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
     width: 350px;
-    margin-bottom: 0;
+
+    margin-top: 0;
   }
 }
 
@@ -140,6 +143,8 @@ img {
     background-image: url(../img/dt-bg-child.png);
     margin-left: auto;
     margin-right: auto;
+    padding-top: 80px;
+    padding-bottom: 84px;
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -150,9 +155,7 @@ img {
       background-image: url(../img/dt-bg-child-2x.png);
     }
   }
-  .how-it-works2-container {
-    gap: 110px;
-  }
+
   .how-it-works2-title {
     max-width: 512px;
     font-size: 40px;
@@ -179,5 +182,6 @@ img {
 
   .child-img {
     width: 434px;
+    left: 80px;
   }
 }
