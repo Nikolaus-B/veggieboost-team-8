@@ -10,12 +10,12 @@
   letter-spacing: -0.96px;
   text-transform: uppercase;
   text-align: center;
-  text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
   margin-bottom: 14px;
 }
 .section-description {
   text-align: center;
-  text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
   font-size: 14px;
   line-height: 1.28;
   letter-spacing: -0.96px;
@@ -31,7 +31,6 @@
 .vegetables-card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   max-width: 299px;
   height: 383px;
   padding: 40px 18px 20px 18px;
@@ -55,11 +54,16 @@
   letter-spacing: -0.28px;
 }
 
+.card-box {
+  margin-bottom: 36px;
+}
+
 .price {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.28;
   letter-spacing: -0.72px;
+  margin-top: auto;
 }
 
 .order-button {
@@ -89,7 +93,7 @@
 .button-span {
   transform: rotate(-14deg);
   color: var(--main-wtite-color);
-  text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
   font-size: 14px;
   letter-spacing: -0.56px;
   font-family: DM Sans;
@@ -142,6 +146,10 @@
     height: 377px;
     margin: 0;
     padding: 64px 10px 24px 11px;
+  }
+
+  .card-box {
+    margin-bottom: 0;
   }
   .card-name {
     font-size: 28px;
