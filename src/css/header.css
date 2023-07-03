@@ -50,6 +50,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: color var(--transition-dur-and-func);
 }
 
 .header-logo-svg {
@@ -65,6 +66,11 @@ body {
   letter-spacing: -0.56px;
   text-transform: uppercase;
   text-align: center;
+}
+
+.header-logo-link:hover,
+.header-logo-link:focus {
+  color: var(--button-color);
 }
 
 .mobile-menu-btn {
@@ -117,19 +123,25 @@ body {
     width: 20px;
     height: 20px;
     margin-left: auto;
+    color: var(--main-text-color);
+  }
+
+  .header-basket-btn:hover,
+  .header-basket-btn:focus {
+    color: var(--button-accent-color);
   }
 
   .header-basket-svg {
     width: 20px;
     height: 20px;
-    stroke: var(--main-text-color);
+    stroke: currentColor;
     fill: transparent;
     transition: stroke var(--transition-dur-and-func);
   }
 
   .header-basket-svg:hover,
   .header-basket-svg:focus {
-    stroke: var(--button-accent-color);
+    stroke: currentColor;
   }
 }
 
