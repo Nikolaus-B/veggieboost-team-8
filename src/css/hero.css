@@ -19,9 +19,14 @@
   /****************************/
 
   .container {
+    box-sizing: border-box;
     padding-top: 48px;
     padding-bottom: 20px;
     background-color: var(--button-accent-color);
+  }
+
+  .wrapper:not(:last-child) {
+    margin-bottom: 8px;
   }
 
   .hero-list {
@@ -113,7 +118,6 @@
   .hero-round-btn {
     width: 68px;
     height: 68px;
-    margin-bottom: 8px;
     font-size: 14px;
     line-height: 1.07;
     letter-spacing: -.56px;
@@ -132,9 +136,26 @@
     background-color: var(--light-green-color);
   }
 
-  .hero-picture {
-    margin-bottom: 16px;
+  .hero-img {
+    position: relative;
+    margin: 0 auto 16px auto;
   }
+
+  /* .wrapper:last-child {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-pic {
+    width: 278px;
+    height: 228px;
+    margin: -28px auto 0 auto;
+    background-image: url(../img/dt-girl.png);
+    background-size: contain;
+    background-position: center 25px;
+    background-repeat: no-repeat;
+    margin-bottom: 16px
+  } */
 
   /** +++++ Teg Buttons +++++ **/
 
@@ -186,7 +207,7 @@
       padding-bottom: 34px;
     }
 
-    .hero-list {
+    .wrapper:not(:last-child) {
       margin-bottom: 16px;
     }
 
@@ -232,12 +253,8 @@
       letter-spacing: -.96px;
     }
 
-    .hero-picture {
-      margin-bottom: 8px;
-    }
-
     .hero-img {
-      margin: 0 auto;
+      margin-bottom: 8px;
     }
 
     /** +++++ Teg Buttons +++++ **/
