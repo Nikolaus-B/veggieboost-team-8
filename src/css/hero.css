@@ -65,9 +65,6 @@ button {
   align-items: center;
 }
 
-
-
-
 .top-counter-text {
   margin-bottom: 2px;
   font-size: 14px;
@@ -199,7 +196,7 @@ button {
 
 /****************************
   ____SECTION HERO Tablet_____
-/****************************/
+  /****************************/
 
 @media screen and (min-width: 768px) {
 
