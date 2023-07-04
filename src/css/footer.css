@@ -22,11 +22,9 @@ font-weight: 700;
 line-height: 1.28;
 letter-spacing: -0.56px;
 display: flex;
-justify-content: center;
-}
-
-.foter-logo-icon {
-padding-right: 8px;
+max-width: 118px;
+margin:  0 auto;
+gap: 8px;
 }
 
 .footer-list {
