@@ -40,7 +40,6 @@ body {
   max-width: 335px; 
   z-index: 1000;
 
-  /* box-sizing: border-box; */
   background-color: var(--main-wtite-color);
 }
 
@@ -80,7 +79,6 @@ body {
 .mobile-menu-btn {
   width: 24px;
   height: 24px;
-  /* margin-left: auto; */
 }
 
 .mobile-menu-btn-svg {
