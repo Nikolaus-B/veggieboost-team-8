@@ -1,772 +1,356 @@
 /*****************************
-
   ______COMMON PROPERTIES______
-
   /****************************/
-
-
-
 
 :root {
-
   --shadow-text: 0px 4px 70px rgba(0, 0, 0, 0.10);
-
   --main-white-color: #fff;
-
   --round-btn-bg-color: #faf3e7;
-
   --hov-tag-btn-bg-color: #f9f7f4;
-
 }
-
-
-
 
 button {
-
   padding: 0;
-
   margin: 0;
-
 }
-
-
-
 
 /*****************************
-
   _____SECTION: HERO Mobile_____
-
   /****************************/
 
-
-
-
 .container {
-
   box-sizing: border-box;
-
   padding-top: 48px;
-
   padding-bottom: 20px;
-
   background-color: var(--button-accent-color);
-
 }
-
-
-
 
 .wrapper:not(:last-child) {
-
   margin-bottom: 8px;
-
 }
-
-
-
 
 .hero-list {
-
   display: flex;
-
   margin-bottom: 14px;
-
   flex-direction: row;
-
 }
-
-
-
 
 .hero-userpic {
-
   min-width: 44px;
-
   min-height: 44px;
-
 }
-
-
-
 
 .hero-list-item:not(:first-child) {
-
   transform: translateX(-16px);
-
 }
-
-
-
 
 .hero-list-item:nth-child(3) {
-
   transform: translateX(-32px);
-
 }
-
-
-
 
 .hero-list-item:last-child {
-
   transform: translateX(-48px);
-
 }
-
-
-
 
 /** +++++ Review Counter Pic +++++ **/
 
-
-
-
 .list-item-counter {
-
   display: flex;
-
   width: 44px;
-
   height: 44px;
-
   background-color: var(--main-white-color);
-
   border-radius: 44px;
-
   flex-direction: column;
-
   justify-content: center;
-
   align-items: center;
-
 }
 
 
 
 
 .top-counter-text {
-
   margin-bottom: 2px;
-
   font-size: 14px;
-
   font-weight: 500;
-
   line-height: 1;
-
   letter-spacing: -.56px;
-
   color: var(--main-text-color);
-
   text-shadow: var(--shadow-text);
-
   text-transform: uppercase;
-
 }
-
-
-
 
 .bottom-counter-text {
-
   font-size: 8px;
-
   line-height: 0.8;
-
   letter-spacing: -.36px;
-
   color: var(--main-text-color);
-
   text-shadow: var(--shadow-text);
-
   background: var(--main-white-color);
-
 }
-
-
-
 
 /** +++++ Hero Title +++++ **/
 
-
-
-
 .hero-title {
-
   margin-bottom: 14px;
-
   font-size: 40px;
-
   font-weight: 500;
-
   line-height: 1.1;
-
   letter-spacing: -1.6px;
-
   color: var(--main-white-color);
-
   text-shadow: var(--shadow-text);
-
   text-transform: uppercase;
-
 }
-
-
-
 
 .hero-title span {
-
   font-style: italic;
-
   color: var(--light-green-color);
-
 }
-
-
-
 
 .hero-text {
-
   max-width: 490px;
-
   margin-bottom: 20px;
-
   font-size: 14px;
-
   line-height: 1.29;
-
   letter-spacing: -0.56px;
-
   color: var(--main-white-color);
-
   text-shadow: var(--shadow-text);
-
 }
-
-
-
 
 /** +++++ Round Button +++++ **/
 
-
-
-
 .hero-round-btn {
-
   width: 68px;
-
   height: 68px;
-
   font-size: 14px;
-
   line-height: 1.07;
-
   letter-spacing: -.56px;
-
   color: var(--button-color);
-
   background: var(--round-btn-bg-color);
-
   border: none;
-
   transform: rotate(-14deg);
-
   transition:
-
     color var(--transition-dur-and-func),
-
     background-color var(--transition-dur-and-func);
-
 }
-
-
-
 
 .hero-round-btn:hover,
-
 .hero-round-btn:focus {
-
   color: var(--button-accent-color);
-
   background-color: var(--light-green-color);
-
 }
-
-
-
 
 /** +++++ Teg Buttons +++++ **/
 
-
-
-
 .wrapper {
-
   position: relative;
-
 }
-
-
-
 
 .hero-picture {
-
   position: relative;
-
   bottom: -8px;
-
 }
-
-
-
 
 .hero-img {
-
   margin: -13px auto 0 auto;
-
 }
-
-
-
 
 .btn {
-
   font-weight: 500;
-
   text-align: center;
-
   text-shadow: var(--shadow-text);
-
   text-transform: uppercase;
-
   border-radius: 100px;
-
 }
-
-
-
 
 .hero-btns-wrapper {
-
   display: flex;
-
   flex-direction: column;
-
   justify-content: flex-end;
-
   gap: 4px 4px;
-
 }
-
-
-
 
 .btns-wrapper-item {
-
   margin-left: auto;
-
 }
-
-
-
 
 .hero-btns-wrapper {
-
   z-index: 999;
-
   position: relative;
-
 }
-
-
-
 
 .hero-btn {
-
   padding: 8px 14px;
-
   font-size: 10px;
-
   line-height: 1.2;
-
   letter-spacing: -.4px;
-
   color: var(--main-white-color);
-
   background-color: transparent;
-
   border: 1px solid var(--main-white-color);
-
   transition:
-
     color var(--transition-dur-and-func),
-
     background-color var(--transition-dur-and-func);
-
 }
-
-
-
 
 .hero-btn:hover,
-
 .hero-btn:focus {
-
   color: var(--main-text-color);
-
   background-color: var(--hov-tag-btn-bg-color);
-
 }
 
-
-
-
 /****************************
-
   ____SECTION HERO Tablet_____
-
 /****************************/
-
-
-
 
 @media screen and (min-width: 768px) {
 
-
-
-
   .container {
-
     padding-top: 64px;
-
     padding-bottom: 32px;
-
   }
-
-
-
 
   /** +++++ Review Counter Pic +++++ **/
 
-
-
-
   .hero-list {
-
     margin-bottom: 16px;
-
   }
-
-
-
 
   .list-item-counter {
-
     width: 54px;
-
     height: 54px;
-
   }
-
-
-
 
   .top-counter-text {
-
     margin-bottom: 0;
-
     font-size: 18px;
-
     line-height: 1.13;
-
     letter-spacing: -.72px;
-
   }
-
-
-
 
   .bottom-counter-text {
-
     font-size: 10px;
-
     line-height: 1.2;
-
     letter-spacing: -.4px;
-
   }
-
-
-
 
   /** +++++ Hero Title +++++ **/
 
-
-
-
   .hero-title {
-
     margin-bottom: 16px;
-
     font-size: 54px;
-
     line-height: 1.18;
-
     letter-spacing: -2.16px;
-
   }
-
-
-
 
   .hero-text {
-
     margin-bottom: 32px;
-
   }
-
-
-
 
   /** +++++ Round Button +++++ **/
 
-
-
-
   .hero-round-btn {
-
     width: 114px;
-
     height: 114px;
-
     font-size: 24px;
-
     line-height: 1;
-
     letter-spacing: -.96px;
-
   }
-
-
-
 
   .hero-picture {
-
     bottom: -26px;
-
   }
-
-
-
 
   .hero-img {
-
     margin: -34px auto 0 auto;
-
   }
-
-
-
 
   /** +++++ Teg Buttons +++++ **/
 
-
-
-
   .hero-btns-wrapper {
-
     gap: 8px 4px;
-
   }
-
-
-
 
   .hero-btn {
-
     padding: 10px 20px;
-
     font-size: 12px;
-
     line-height: 1.17;
-
     letter-spacing: -.48px;
-
   }
-
 }
 
-
-
-
 /******************************
-
     ____SECTION HERO Desktop____
-
   /****************************/
-
-
-
 
 @media screen and (min-width: 1280px) {
 
-
-
-
   .container {
-
     display: flex;
-
     justify-content: space-between;
-
     padding-top: 132px;
-
   }
-
-
-
 
   .wrapper:not(:last-child) {
-
     margin-bottom: 92px;
-
   }
-
-
-
 
   .wrapper:last-child {
-
     padding-top: 42px;
-
   }
-
-
-
 
   /** +++++ Review Counter Pic +++++ **/
 
-
-
-
   .list-item-counter {
-
     width: 70px;
-
     height: 70px;
-
   }
-
-
-
 
   .top-counter-text {
-
     margin-bottom: 2px;
-
     font-size: 24px;
-
     line-height: 1;
-
     letter-spacing: -.96px;
-
   }
-
-
-
 
   .bottom-counter-text {
-
     font-size: 12px;
-
     line-height: 1.17;
-
     letter-spacing: -.48px;
-
   }
-
-
-
 
   /** +++++ Hero Title +++++ **/
 
-
-
-
   .hero-title {
-
     width: 672px;
-
     font-size: 64px;
-
     line-height: 1.17;
-
     letter-spacing: -2.16px;
-
   }
-
-
-
 
   /** +++++ Round Button +++++ **/
 
-
-
-
   .hero-round-btn {
-
     width: 132px;
-
     height: 132px;
-
     font-size: 28px;
-
     letter-spacing: -1.12px;
-
   }
-
-
-
 
   .hero-picture {
-
     bottom: 0px;
-
   }
-
-
-
 
   .hero-img {
-
     margin: 0 auto 16px auto;
-
     margin-bottom: 21px;
-
   }
-
-
-
 
   /** +++++ Teg Buttons +++++ **/
 
-
-
-
   .hero-btns-wrapper {
-
     gap: 8px 8px;
-
   }
-
-
-
 
   .hero-btn {
-
     padding: 12px 32px;
-
   }
-
 }
