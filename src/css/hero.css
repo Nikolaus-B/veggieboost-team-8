@@ -3,10 +3,8 @@
   /****************************/
 
 :root {
-  --shadow-text: 0px 4px 70px rgba(0, 0, 0, 0.10);
   --main-white-color: #fff;
   --round-btn-bg-color: #faf3e7;
-  --hov-tag-btn-bg-color: #f9f7f4;
 }
 
 button {
