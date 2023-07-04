@@ -60,7 +60,7 @@
   text-transform: capitalize;
   border-radius: 100px;
   border: none;
-  background: #fc8a11;
+  background: var(--button-color);
 
   display: inline-flex;
   padding: 15px 35px;
@@ -83,6 +83,7 @@
 
   position: relative;
   border-radius: 40px;
+
   background: var(--border-radius-color);
 
   background-image: url(../img/mob-bg-woman.png);
@@ -137,6 +138,7 @@
   }
   .mob-callback-img {
     padding: 17px 38px 0 37px;
+    border-radius: 80px;
 
     background-image: url(../img/tab-bg-woman.png);
     background-size: 673px 463px;
