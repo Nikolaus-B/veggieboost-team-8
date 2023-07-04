@@ -18,7 +18,7 @@ button {
   _____SECTION: HERO Mobile_____
   /****************************/
 
-.container {
+.hero-container {
   box-sizing: border-box;
   padding-top: 48px;
   padding-bottom: 20px;
@@ -200,7 +200,7 @@ button {
 
 @media screen and (min-width: 768px) {
 
-  .container {
+  .hero-container {
     padding-top: 64px;
     padding-bottom: 32px;
   }
@@ -280,7 +280,7 @@ button {
 
 @media screen and (min-width: 1280px) {
 
-  .container {
+  .hero-container {
     display: flex;
     justify-content: space-between;
     padding-top: 132px;
