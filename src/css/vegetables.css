@@ -93,7 +93,7 @@ img {
 }
 
 .order-button:hover,
-.oder-button:focus {
+.order-button:focus {
   background-color: var(--button-accent-color);
 }
 
