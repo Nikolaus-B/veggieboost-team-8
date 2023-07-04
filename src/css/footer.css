@@ -24,10 +24,7 @@ letter-spacing: -0.56px;
 display: flex;
 max-width: 118px;
 margin:  0 auto;
-}
-
-.foter-logo-icon {
-margin-right: 8px;
+gap: 8px;
 }
 
 .footer-list {
