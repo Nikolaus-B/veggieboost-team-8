@@ -1,157 +1,213 @@
-<section class="modal-section" id=modal-window>
-  <div class="backdrop is-hidden" data-modal>
-  <div class="modal-container">
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal-window">
     <button type="button" class="btn-menu-close" data-modal-close>
       <svg class="icon-modal-btn" width="28" height="28">
         <use href="./img/icons.svg#x-1"></use>
       </svg>
     </button>
 
-    <p class="text-modal-order">Your order</p>
-    <div class="order-container">
-      <ul class="list-order list">
-        <li class="list-order-item">
-          <input
-            type="checkbox"
-            class="modal-input-checkbox visually-hidden"
-            name="user-order"
-            id="user-order-cabbage"
-            value="true"
+    <p class="modal-text">Your Order</p>
+
+    <ul class="modal-list list">
+      <li class="modal-item">
+        <p class="modal-name">Cabbage Basket</p>
+        <p class="modal-product-type">Plant</p>
+        <picture class="modal-picture">
+          <source
+            srcset="
+              ./img/dt-cabbage-modal.png    1x,
+              ./img/dt-cabbage-modal-2x.png 2x
+            "
+            media="(min-width: 1280px)"
           />
-          <label for="user-order-cabbage" class="checkbox-label">
-            <span class="span-check">
-              <svg class="icon-check" width="10" height="10">
-                <use href="./img/icons.svg#pick"></use>
-              </svg>
-            </span>
-          </label>
-          <div class="modal-card-wrapper">
-            <h2 class="order-item-title">Cabbage Basket</h2>
-            <p class="order-item-descr">Plant</p>
-            <img
-              srcset="
-                ./img/dt-cabbage-modal.png    1x,
-                ./img/dt-cabbage-modal-2x.png 2x
-              "
-              src="./img/dt-cabbage-modal.png"
-              alt="A basket of cabbage"
-              width="172"
-              height="142"
-              class="modal-card-pic"
-            />
-          </div>
-        </li>
-
-        <li class="list-order-item">
-          <input
-            type="checkbox"
-            class="modal-input-checkbox visually-hidden"
-            name="user-order"
-            id="user-order-tomato"
-            value="true"
+          <source
+            srcset="
+              ./img/tab-cabbage-modal.png    1x,
+              ./img/tab-cabbage-modal-2x.png 2x
+            "
+            media="(min-width: 768px)"
           />
-          <label for="user-order-tomato" class="checkbox-label">
-            <span class="span-check">
-              <svg class="icon-check" width="10" height="10">
-                <use href="./img/icons.svg#pick"></use>
-              </svg>
-            </span>
-          </label>
-          <div class="modal-card-wrapper">
-            <h2 class="order-item-title">Tomato Basket</h2>
-            <p class="order-item-descr">Plant</p>
-
-            <img
-              srcset="
-                ./img/dt-tomato-modal.png    1x,
-                ./img/dt-tomato-modal-2x.png 2x
-              "
-              src="./img/dt-tomato-modal.png"
-              alt="A basket of tomato"
-              width="172"
-              height="142"
-              class="modal-card-pic"
-            />
-          </div>
-        </li>
-
-        <li class="list-order-item">
-          <input
-            type="checkbox"
-            class="modal-input-checkbox visually-hidden"
-            name="user-order"
-            id="user-order-vegetables"
-            value="true"
+          <source
+            srcset="
+              ./img/mob-cabbage-modal.png    1x,
+              ./img/mob-cabbage-modal-2x.png 2x
+            "
+            media="(max-width: 767px)"
           />
-          <label for="user-order-vegetables" class="checkbox-label">
-            <span class="span-check">
-              <svg class="icon-check" width="10" height="10">
-                <use href="./img/icons.svg#pick"></use>
-              </svg>
-            </span>
-          </label>
-          <div class="modal-card-wrapper">
-            <h2 class="order-item-title">Vegetables Basket</h2>
-            <p class="order-item-descr">Plant</p>
 
-            <img
-              srcset="
-                ./img/dt-vegetables-basket-modal.png    1x,
-                ./img/dt-vegetables-basket-modal-2x.png 2x
-              "
-              src="./img/dt-vegetables-basket-modal.png"
-              alt="A basket of green vegetables"
-              width="172"
-              height="142"
-              class="modal-card-pic"
-            />
-          </div>
-        </li>
-      </ul>
-    </div>
-
-    <div class="form-container">
-      <form class="modal-form">
-        <input
-          type="text"
-          name="user-name"
-          id="user-name"
-          class="modal-input"
-          placeholder="Enter full name..."
-        />
+          <img
+            class="modal-image"
+            src="./img/mob-cabbage-modal.png"
+            alt="product"
+          />
+        </picture>
 
         <input
-          type="email"
-          name="user-email"
-          id="user-email"
-          class="modal-input"
-          placeholder="Enter email..."
+          type="checkbox"
+          class="modal-input-checkbox visually-hidden"
+          name="user-order"
+          id="user-order-cabbage"
+          value="true"
         />
+        <label for="user-order-cabbage" class="checkbox-label">
+          <span class="span-check">
+            <svg class="icon-check" width="10" height="10">
+              <use href="./img/icons.svg#pick"></use>
+            </svg>
+          </span>
+        </label>
+      </li>
+
+      <li class="modal-item">
+        <p class="modal-name">Tomato Basket</p>
+        <p class="modal-product-type">Plant</p>
+        <picture>
+          <source
+            srcset="
+              ./img/dt-tomato-modal.png    1x,
+              ./img/dt-tomato-modal-2x.png 2x
+            "
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="
+              ./img/tab-tomato-modal.png    1x,
+              ./img/tab-tomato-modal-2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./img/mob-tomato-modal.png    1x,
+              ./img/mob-tomato-modal-2x.png 2x
+            "
+            media="(max-width: 767px)"
+          />
+
+          <img
+            class="modal-image"
+            src="./img/mob-tomato-modal.png"
+            alt="product"
+          />
+        </picture>
 
         <input
-          type="text"
-          name="user-card"
-          id="user-card"
-          class="modal-input"
-          placeholder="Enter card..."
+          type="checkbox"
+          class="modal-input-checkbox visually-hidden"
+          name="user-order"
+          id="user-order-tomato"
+          value="true"
         />
+        <label for="user-order-tomato" class="checkbox-label">
+          <span class="span-check">
+            <svg class="icon-check" width="10" height="10">
+              <use href="./img/icons.svg#pick"></use>
+            </svg>
+          </span>
+        </label>
+      </li>
 
-        <textarea
-          name="user-comment"
-          id="user-comment"
-          class="textarea-input"
-          placeholder="Enter comments..."
-        ></textarea>
-      </form>
-    </div>
+      <li class="modal-item">
+        <p class="modal-name">Vegetables Basket</p>
+        <p class="modal-product-type">Plant</p>
+        <picture>
+          <source
+            srcset="
+              ./img/dt-vegetables-basket-modal.png    1x,
+              ./img/dt-vegetables-basket-modal-2x.png 2x
+            "
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="
+              ./img/dt-vegetables-basket-modal.png    1x,
+              ./img/dt-vegetables-basket-modal-2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./img/mob-vegetables-basket-modal.png    1x,
+              ./img/mob-vegetables-basket-modal-2x.png 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <img
+            class="modal-image"
+            src="./img/mob-vegetables-basket-modal.png"
+            alt="product"
+          />
+        </picture>
+
+        <input
+          type="checkbox"
+          class="modal-input-checkbox visually-hidden"
+          name="user-order"
+          id="user-order-vegetables"
+          value="true"
+        />
+        <label for="user-order-vegetables" class="checkbox-label">
+          <span class="span-check">
+            <svg class="icon-check" width="10" height="10">
+              <use href="./img/icons.svg#pick"></use>
+            </svg>
+          </span>
+        </label>
+      </li>
+    </ul>
+
+    <form action="" class="modal-form">
+      <input
+        type="text"
+        name="user-name"
+        id="user-name"
+        class="modal-input"
+        placeholder="Enter full name..."
+      />
+
+      <input
+        type="email"
+        name="user-email"
+        id="user-email"
+        class="modal-input"
+        placeholder="Enter email..."
+      />
+
+      <input
+        type="text"
+        name="user-card"
+        id="user-card"
+        class="modal-input"
+        placeholder="Enter card..."
+      />
+
+      <textarea
+        name="user-comment"
+        id="user-comment"
+        class="textarea-input"
+        placeholder="Enter comments..."
+      ></textarea>
+    </form>
+
     <button type="submit" class="btn-submit">Submit</button>
-    <!-- <img
-      srcset="./img/girl-modal-window.png 1x, ./img/girl-modal-window-2x.png 2x"
-      src="./img/girl-modal-window.png"
-      alt=""
-      width="444"
-      height="413"
-      class="modal-pic-girl"
-    /> -->
+
+    <picture>
+      <source
+        srcset="
+          ./img/girl-modal-window.png    1x,
+          ./img/girl-modal-window-2x.png 2x
+        "
+        media="(min-width: 1280px)"
+      />
+      <source
+        srcset="./img/tab-girl-modal.png 1x, ./img/tab-girl-modal-2x.png 2x"
+        media="(min-width: 768px)"
+      />
+      <img
+        src="./img/girl-modal-window.png"
+        alt="girl with cabbage"
+        class="girl-with-cabbage"
+      />
+    </picture>
   </div>
-</section>
+</div>
