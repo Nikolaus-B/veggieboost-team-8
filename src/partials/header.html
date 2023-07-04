@@ -1,3 +1,29 @@
-<header>
-  <p class="header-text">Header</p>
+<header class="header">
+  <section class="header-container container">
+    <nav class="header-nav">
+      <ul class="header-nav-list">
+        <li class="header-nav-item"><a href="#broccoli-1" class="header-nav-link">How It Works</a></li>
+        <li class="header-nav-item"><a href="#vegetables-types" class="header-nav-link">Vegetables</a></li>
+        <li class="header-nav-item"><a href="#we-will-call-you" class="header-nav-link">Contacts</a></li>
+      </ul>
+    </nav>
+    <div class="header-logo-wrap">
+      <a href="./index.html" class="header-logo-link">
+        <svg class="header-logo-svg" width="16px" height="16px">
+          <use href="../img/icons.svg#logo"></use>
+        </svg>
+        <span class="header-logo-text">veggieboost</span>
+      </a>
+    </div>
+    <button type="button" class="mobile-menu-btn header-btn" js-open-menu>
+      <svg class="mobile-menu-btn-svg" width="24px" height="24px">
+        <use href="./img/icons.svg#mobile"></use>
+      </svg>
+    </button>
+    <button type="button" class="header-basket-btn header-btn" data-modal-open>
+      <svg class="header-basket-svg">
+        <use href="./img/icons.svg#shopping-cart"></use>
+      </svg>
+    </button>
+  </section>
 </header>
