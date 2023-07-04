@@ -22,7 +22,8 @@ font-weight: 700;
 line-height: 1.28;
 letter-spacing: -0.56px;
 display: flex;
-justify-content: center;
+max-width: 118px;
+margin:  0 auto;
 }
 
 .foter-logo-icon {
