@@ -3,7 +3,7 @@
   padding-bottom: 80px;
 }
 
-img {
+.vegetables-img {
   height: 249px;
   width: 299px;
 }
@@ -102,6 +102,8 @@ img {
 }
 
 .button-span {
+  position: relative;
+  top: -7px;
   transform: rotate(-14deg);
   color: var(--main-wtite-color);
   text-shadow: var(--shadow-text);
@@ -115,7 +117,7 @@ img {
 
 /* tablet */
 @media screen and (min-width: 768px) {
-  img {
+  .vegetables-img {
     width: 321px;
     height: 261px;
   }
