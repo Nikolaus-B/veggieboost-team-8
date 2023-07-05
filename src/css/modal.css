@@ -26,11 +26,10 @@
 
   width: 100%;
   max-width: 335px;
-  min-height: 853px;
+  height: 100%;
   border-radius: 20px;
 
   padding: 20px;
-  margin-top: 150px;
 
   background: var(--main-wtite-color);
   box-shadow: 0px 0px 8.775463104248047px 0px rgba(0, 0, 0, 0.01),
@@ -194,7 +193,7 @@
 
 /* CHECKBOX */
 
-.modal-input-checkbox:checked+.checkbox-label span {
+.modal-input-checkbox:checked + .checkbox-label span {
   fill: var(--button-accent-color);
 }
 
@@ -316,7 +315,6 @@
 @media screen and (min-width: 1280px) {
   .modal-window {
     max-width: 891px;
-    min-height: 911px;
   }
 
   .modal-list {
