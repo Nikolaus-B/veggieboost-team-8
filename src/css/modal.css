@@ -6,7 +6,6 @@
 
   width: 100%;
   height: 100%;
-  overflow-y: scroll;
 
   transition: opacity var(--transition-dur-and-func),
     visibility var(--transition-dur-and-func);
@@ -195,7 +194,7 @@
 
 /* CHECKBOX */
 
-.modal-input-checkbox:checked + .checkbox-label span {
+.modal-input-checkbox:checked+.checkbox-label span {
   fill: var(--button-accent-color);
 }
 
