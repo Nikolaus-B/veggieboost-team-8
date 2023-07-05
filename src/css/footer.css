@@ -213,6 +213,8 @@ margin-top: 20px;
 .footer-list{
 align-items: center;
 margin-bottom: 0;
+position: relative;
+bottom: 19px;
 }
 
 .footer-soc-list{
