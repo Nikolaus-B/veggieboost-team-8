@@ -14,6 +14,11 @@ body {
   padding-top: 50px;
 }
 
+.header {
+  border-bottom: 1px solid var(--header-green-color);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
 .header-btn {
   background-color: transparent;
   border: none;
@@ -111,10 +116,6 @@ body {
     margin: 0 auto;
   }
 
-  .mob-menu-item {
-    text-align: center;
-  }
-
   .mob-close-btn {
     position: absolute;
     top: -13px;
@@ -133,10 +134,10 @@ body {
   }
 
   .mob-menu-list {
-    text-align: center;
-  }
-
-  .mob-menu-item:not(:last-of-type) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
     margin-bottom: 16px;
   }
 
@@ -151,12 +152,11 @@ body {
   .mob-cart-link {
     display: block;
     text-align: center;
-    margin-top: 16px;
   }
 
   .mob-cart {
     stroke: var(--main-wtite-color);
-    fill: var(--main-wtite-color);
+    fill: var(--button-accent-color);
   }
 }
 
