@@ -1,3 +1,350 @@
-.modal {
-  margin: 0;
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1001;
+
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+
+  transition: opacity var(--transition-dur-and-func),
+    visibility var(--transition-dur-and-func);
+  background-color: var(--main-wtite-color);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal-window {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 100%;
+  max-width: 335px;
+  min-height: 853px;
+  border-radius: 20px;
+
+  padding: 20px;
+  margin-top: 150px;
+
+  background: var(--main-wtite-color);
+  box-shadow: 0px 0px 8.775463104248047px 0px rgba(0, 0, 0, 0.01),
+    0px 0px 18.17037010192871px 0px rgba(0, 0, 0, 0.02),
+    0px 0px 36.23749923706055px 0px rgba(0, 0, 0, 0.03),
+    0px 0px 71.02963256835938px 0px rgba(0, 0, 0, 0.03),
+    0px 0px 130.5995330810547px 0px rgba(0, 0, 0, 0.04),
+    0px 0px 223px 0px rgba(0, 0, 0, 0.05);
+  overflow-y: scroll;
+}
+
+.btn-menu-close {
+  position: absolute;
+  top: 22px;
+  right: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 24px;
+  height: 24px;
+
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.btn-menu-close {
+  color: var(--main-text-color);
+}
+
+.btn-menu-close:hover,
+.btn-menu-close:focus {
+  color: var(--button-accent-color);
+}
+
+.icon-modal-btn {
+  stroke: currentColor;
+  transition: stroke var(--transition-dur-and-func);
+}
+
+.icon-modal-btn:hover,
+.icon-modal-btn:focus {
+  stroke: currentColor;
+}
+
+.modal-text {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -4%;
+  margin-bottom: 40px;
+  color: var(--main-text-color);
+}
+
+.modal-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.modal-item {
+  position: relative;
+  max-width: 295px;
+  height: 119px;
+  padding: 20px 30px 8px 20px;
+
+  border-radius: 20px;
+  background-color: var(--secondary-background-color);
+}
+
+.modal-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -4%;
+  margin-bottom: 2px;
+}
+
+.modal-product-type {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -2%;
+}
+
+.modal-input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 46px;
+  padding-left: 24px;
+  margin-bottom: 14px;
+
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -4%;
+
+  border-radius: 100px;
+  border: 1px solid rgba(20, 20, 20, 0.3);
+  outline: transparent;
+  color: rgba(20, 20, 20, 0.5);
+  transition: border-color var(--transition-dur-and-func),
+    color var(--transition-dur-and-func);
+}
+
+.modal-input:hover,
+.modal-input:focus {
+  border-color: var(--button-color);
+  color: var(--button-color);
+}
+
+.textarea-input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 132px;
+  padding: 14px 24px;
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.56px;
+
+  border-radius: 20px;
+  border: 1px solid rgba(20, 20, 20, 0.3);
+  resize: none;
+  outline: transparent;
+  color: rgba(20, 20, 20, 0.5);
+
+  transition: border-color var(--transition-dur-and-func),
+    color var(--transition-dur-and-func);
+}
+
+.textarea-input:hover,
+.textarea-input:focus {
+  border-color: var(--button-color);
+  color: var(--button-color);
+}
+
+.btn-submit {
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -4%;
+
+  border-radius: 100px;
+  background: var(--button-color);
+  padding: 12px 24px;
+  border: none;
+  color: var(--main-wtite-color);
+
+  transition: background-color var(--transition-dur-and-func);
+}
+
+.btn-submit:focus,
+.btn-submit:hover {
+  background-color: var(--button-accent-color);
+}
+
+/* CHECKBOX */
+
+.modal-input-checkbox:checked + .checkbox-label span {
+  fill: var(--button-accent-color);
+}
+
+.checkbox-label {
+  display: flex;
+}
+
+.icon-check {
+  width: 6px;
+  height: 6px;
+}
+
+.span-check {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+
+  display: flex;
+
+  width: 16px;
+  height: 16px;
+
+  border: 2px solid var(--button-accent-color);
+  border-radius: 5px;
+  cursor: pointer;
+  fill: transparent;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .modal-image {
+    display: block;
+    margin-top: -33px;
+    width: 94px;
+    height: 78px;
+    margin-left: auto;
+  }
+
+  .girl-with-cabbage {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal-window {
+    max-width: 704px;
+    padding: 40px;
+  }
+
+  .btn-menu-close {
+    top: 20px;
+    right: 20px;
+
+    width: 28px;
+    height: 28px;
+  }
+
+  .modal-text {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.1;
+    letter-spacing: -4%;
+  }
+
+  .modal-list {
+    flex-direction: row;
+    gap: 12px;
+    margin-bottom: 40px;
+  }
+
+  .modal-item {
+    max-width: 200px;
+    height: 250px;
+    padding: 40px 14px 14px 20px;
+  }
+
+  .modal-product-type {
+    margin-bottom: 6px;
+  }
+
+  .modal-image {
+    width: 172px;
+    height: 142px;
+    margin-left: auto;
+  }
+
+  .span-check {
+    width: 20px;
+    height: 20px;
+  }
+
+  .icon-check {
+    width: 8px;
+    height: 8px;
+  }
+
+  .modal-input {
+    max-width: 360px;
+    height: 48px;
+  }
+
+  .textarea-input {
+    max-width: 360px;
+    height: 145px;
+  }
+
+  .btn-submit {
+    padding: 15px 35px;
+  }
+
+  .girl-with-cabbage {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .modal-window {
+    max-width: 891px;
+    min-height: 911px;
+  }
+
+  .modal-list {
+    gap: 20px;
+  }
+
+  .modal-item {
+    max-width: 257px;
+    height: 308px;
+    padding: 40px 7px 14px 20px;
+  }
+
+  .modal-name {
+    margin-bottom: 8px;
+  }
+
+  .modal-product-type {
+    margin-bottom: 0px;
+  }
+
+  .modal-image {
+    width: 243px;
+    height: 200px;
+  }
+
+  .modal-form {
+    display: flex;
+    flex-direction: column;
+  }
 }
