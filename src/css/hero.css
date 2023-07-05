@@ -34,8 +34,8 @@ button {
 }
 
 .hero-userpic {
-  min-width: 44px;
-  min-height: 44px;
+  width: 44px;
+  height: 44px;
 }
 
 .hero-list-item:not(:first-child) {
@@ -214,6 +214,11 @@ button {
     height: 54px;
   }
 
+  .hero-userpic {
+    width: 54px;
+    height: 54px;
+  }
+
   .top-counter-text {
     margin-bottom: 0;
     font-size: 18px;
@@ -295,6 +300,11 @@ button {
   /** +++++ Review Counter Pic +++++ **/
 
   .list-item-counter {
+    width: 70px;
+    height: 70px;
+  }
+
+  .hero-userpic {
     width: 70px;
     height: 70px;
   }
