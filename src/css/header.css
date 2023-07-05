@@ -14,11 +14,6 @@ body {
   padding-top: 50px;
 }
 
-.header {
-  border-bottom: 1px solid var(--header-green-color);
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-}
-
 .header-btn {
   background-color: transparent;
   border: none;
@@ -33,6 +28,8 @@ body {
   position: fixed;
   top: 0;
   z-index: 999;
+  border-bottom: 1px solid var(--header-green-color);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-wrap {
