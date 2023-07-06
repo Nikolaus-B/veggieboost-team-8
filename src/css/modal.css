@@ -193,7 +193,7 @@
 
 /* CHECKBOX */
 
-.modal-input-checkbox:checked + .checkbox-label span {
+.modal-input-checkbox:checked+.checkbox-label span {
   fill: var(--button-accent-color);
 }
 
@@ -224,7 +224,7 @@
   align-items: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .modal-image {
     display: block;
     margin-top: -33px;
@@ -307,7 +307,7 @@
 
   .girl-with-cabbage {
     position: absolute;
-    bottom: 0;
+    top: 450px;
     right: 0;
   }
 }
@@ -343,5 +343,9 @@
   .modal-form {
     display: flex;
     flex-direction: column;
+  }
+
+  .girl-with-cabbage {
+    top: 501px;
   }
 }
