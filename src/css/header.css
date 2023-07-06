@@ -150,9 +150,12 @@ body {
     letter-spacing: -0.56px;
   }
 
-  .mob-cart-link {
+  .mob-cart-btn {
+    height: 20px;
     display: block;
-    text-align: center;
+    background: var(--button-accent-color);
+    margin: 0 auto;
+    border: none;
   }
 
   .mob-cart {
